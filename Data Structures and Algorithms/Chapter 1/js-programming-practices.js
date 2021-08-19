@@ -29,7 +29,7 @@ Result:
 */
 
 
-//Declaring Variables Ex #2
+// Arithmetic operations Ex #2
 let x = 3;
 let y = 1.1;
 let z = x * y;
