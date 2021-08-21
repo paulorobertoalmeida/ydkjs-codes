@@ -66,3 +66,24 @@ function Animal (nome) {
   /*
   new Cachorro (Constructor) -> Cachorro (class) -> Animal (function) -> (nome) parameter
   */
+
+// Extends Subclasses Exemple 2
+// Animal variable -> falar() method -> Cachorro class -> nome parameter
+
+
+let Animal = {
+    falar() {
+       console.log(this.nome + ' faça barulho.');
+    }
+ };
+ 
+ class Cachorro {
+    constructor(nome) {
+       this.nome = nome;
+    }
+ }
+ 
+ Object.setPrototypeOf(Cachorro.prototype, Animal);
+ 
+ let cachorro = new Cachorro('Mitzie');
+ cachorro.falar();
