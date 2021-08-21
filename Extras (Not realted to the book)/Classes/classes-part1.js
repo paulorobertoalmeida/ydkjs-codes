@@ -43,3 +43,26 @@ p2.distancia; //undefined
 console.log(Ponto.distancia(p1, p2));
 console.log(p1);
 console.log(p2);
+
+// Extends subclass
+
+function Animal (nome) {
+    this.nome = nome;
+  }
+  
+  Animal.prototype.falar = function() {
+     console.log(this.nome + ' faça barulho.');
+  }
+  
+  class Cachorro extends Animal {
+    falar() {
+      console.log(this.nome + ' lati.');
+    }
+  }
+  
+  let cachorro = new Cachorro('Mitzie');
+  cachorro.falar();
+  
+  /*
+  new Cachorro (Constructor) -> Cachorro (class) -> Animal (function) -> (nome) parameter
+  */
