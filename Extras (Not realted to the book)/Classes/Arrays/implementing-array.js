@@ -18,3 +18,8 @@ class MyArray {
   console.log(newArray.get(0));
   //newArray.push("you");
   //console.log(newArray);
+/*
+newArray.pop();
+newArray.pop();
+console.log(newArray);
+*/
