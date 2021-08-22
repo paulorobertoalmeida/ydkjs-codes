@@ -16,4 +16,5 @@ class MyArray {
   const newArray = new MyArray();
   newArray.push("hi");
   console.log(newArray.get(0));
+  //newArray.push("you");
   //console.log(newArray);
