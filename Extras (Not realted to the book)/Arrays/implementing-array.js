@@ -45,4 +45,21 @@ class MyArray {
   myArray.shiftItems(0);
   console.log(myArray);
 
-  // 
+// Reversing Names
+
+function reverse(str) {
+  if(!str || str.lenght < 2 || typeof str !== 'string') {
+    return "Something is not good";
+  }
+  const backwards = [];
+  const totalItems = str.length -1;
+
+  for (let i = totalItems; i >= 0; i--) {
+    backwards.push(str[i]);
+  }
+  console.log(backwards); 
+
+  return backwards.join('');
+}
+
+reverse('Hi my name is Paulo');
