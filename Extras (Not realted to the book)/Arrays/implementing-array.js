@@ -44,3 +44,5 @@ class MyArray {
   myArray.push('nice');
   myArray.shiftItems(0);
   console.log(myArray);
+
+  // 
