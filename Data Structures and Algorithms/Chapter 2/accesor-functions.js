@@ -64,3 +64,33 @@ console.log(itDiv);
   'Danny',
   'Jennifer' ]
 */
+
+// Fixing the error who's in the book
+let cis;
+let dmp;
+
+cis = ["Mike", "Clayton", "Terrill", "Danny", "Jennifer"];
+dmp = ["Raymond", "Cynthia", "Bryan"];
+let itDiv = cis.concat(dmp);
+console.log(itDiv);
+itDiv = dmp.concat(cis);
+console.log(itDiv);
+
+/*
+[ 'Mike',
+  'Clayton',
+  'Terrill',
+  'Danny',
+  'Jennifer',
+  'Raymond',
+  'Cynthia',
+  'Bryan' ]
+[ 'Raymond',
+  'Cynthia',
+  'Bryan',
+  'Mike',
+  'Clayton',
+  'Terrill',
+  'Danny',
+  'Jennifer' ]
+*/
