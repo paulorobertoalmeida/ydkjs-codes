@@ -2,7 +2,7 @@
 
 let names = [ "David", "Cynthia", "Raymond", "Clayton", "Jennifer"];
 console.log("Enter a name to search for: ");
-let name = readline();
+let name = prompt();
 let position = names.indexOf(name);
 if ( position >= 0) {
   console.log("found " + name + " at position " + position);
