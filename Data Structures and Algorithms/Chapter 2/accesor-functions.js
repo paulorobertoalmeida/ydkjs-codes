@@ -94,3 +94,19 @@ console.log(itDiv);
   'Danny',
   'Jennifer' ]
 */
+
+// Creating New Arrays from Existing Ones
+// Splice
+
+let itDiv = ["Mike", " Clayton", "Terrill", "Raymond", "Cynthia", "Danny", "Jennifer"];
+let dmpDept = itDiv.splice(3,3);
+let cisDept = itDiv;
+console.log(dmpDept);
+console.log(cisDept);
+
+/* 
+
+[ 'Raymond', 'Cynthia', 'Danny' ]
+[ 'Mike', ' Clayton', 'Terrill', 'Jennifer' ]
+
+*/
