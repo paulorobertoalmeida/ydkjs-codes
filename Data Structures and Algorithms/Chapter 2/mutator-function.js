@@ -40,3 +40,21 @@ console.log(nums);
 /* 
 [ 0, 1, 2, 3, 4, 5 ]
 */
+
+// Mutator Function
+// Unshift is the mutator for adding array elements to the beginning of an array
+
+let nums = [ 2, 3, 4, 5];
+console.log(nums);
+let newnum = 1;
+nums.unshift(newnum);
+console.log(nums);
+nums = [ 3, 4, 5];
+nums.unshift(newnum, 1, 2); 
+console.log(nums);
+
+/* 
+[ 2, 3, 4, 5 ]
+[ 1, 2, 3, 4, 5 ]
+[ 1, 1, 2, 3, 4, 5 ]
+*/
