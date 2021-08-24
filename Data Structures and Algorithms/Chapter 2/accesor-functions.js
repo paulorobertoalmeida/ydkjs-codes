@@ -32,3 +32,35 @@ console.log(namestr);
 David,Cynthia,Raymond,Clayton,Mike,Jennifer
 David,Cynthia,Raymond,Clayton,Mike,Jennifer
 */
+
+
+// Creating New Arrays from Existing Ones
+
+let cisDept = ["Mike", "Clayton", "Terrill", "Danny", "Jennifer"];
+let dmpDept = ["Raymond", "Cynthia", "Bryan"];
+let itDiv = cisDept.concat(dmpDept);
+console.log(itDiv);
+itDiv = dmpDept.concat(cisDept);
+console.log(itDiv);
+
+
+
+/* 
+
+[ 'Mike',
+  'Clayton',
+  'Terrill',
+  'Danny',
+  'Jennifer',
+  'Raymond',
+  'Cynthia',
+  'Bryan' ]
+[ 'Raymond',
+  'Cynthia',
+  'Bryan',
+  'Mike',
+  'Clayton',
+  'Terrill',
+  'Danny',
+  'Jennifer' ]
+*/
