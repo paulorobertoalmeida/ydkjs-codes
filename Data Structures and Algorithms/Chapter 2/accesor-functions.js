@@ -20,3 +20,15 @@ let lastPos = names.lastIndexOf(name);
 console.log("Last found "+ name + " at position " + lastPos);
 
 
+//String Representations of Arrays
+
+let names = [ "David", "Cynthia", "Raymond", "Clayton","Mike", "Jennifer"];
+let namestr = names.join();
+console.log(namestr);
+namestr = names.toString();
+console.log(namestr);
+
+/* 
+David,Cynthia,Raymond,Clayton,Mike,Jennifer
+David,Cynthia,Raymond,Clayton,Mike,Jennifer
+*/
