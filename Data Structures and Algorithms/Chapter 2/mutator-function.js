@@ -24,3 +24,19 @@ console.log(nums)
 [ 1, 2, 3, 4, 5 ]
 [ 1, 2, 3, 4, 5, 6 ]
 */
+
+// Mutator Function
+// Pop - Array has to be shifted up one position before the new data is added.
+
+let nums = [1, 2, 3, 4, 5];
+let newnum = 0;
+let N = nums.length;
+for (let i = N; i >= 0; --i) {
+  nums[i] = nums[i-1];
+}
+nums[0] = newnum;
+console.log(nums);
+
+/* 
+[ 0, 1, 2, 3, 4, 5 ]
+*/
