@@ -50,3 +50,18 @@ This number is even 8
 This number is 0dd 9
 This number is even 10
 */
+// Iterator Function
+// reduce()
+
+let nums = [1,2,3,4,5,6,7,8,9,10];
+
+function add (runningTotal, currentValue) {
+ return runningTotal + currentValue;
+}
+
+let sum = nums.reduce(add);
+console.log(sum);
+
+/* 
+55
+*/
