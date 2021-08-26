@@ -13,3 +13,21 @@ function add(runningTotal, currentValue) {
   55
   */
   
+
+  // Reduce Exemple 2
+
+function concat(acummulatedString, item) {
+    return acummulatedString + item;
+  }
+  
+  let words = ["the ", "quick ", "brown ", "fox! "];
+  let sentence = words.reduce(concat);
+  //let sentence = words.reduceRight(concat);
+  
+  console.log(sentence);
+  
+  /* 
+  Result:
+  the quick brown fox! 
+  */
+  
