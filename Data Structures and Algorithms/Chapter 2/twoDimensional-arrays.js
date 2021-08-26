@@ -68,5 +68,7 @@ for (let row = 0; row < grades.length; ++row){
 
 /* 
 Result:
-
+Student 1 average: 0.00
+Student 2 average: 0.00
+Student 3 average: 0.00
 */
