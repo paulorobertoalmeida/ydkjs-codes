@@ -37,3 +37,19 @@ function List(){
     }
     return -1;
   }
+
+  //Finding an element in a List
+function remove(element) {
+    let foundAt = this.find(element);
+    if (foundAt > -1) {
+      this.dataStote.splice(foundAt,1);
+      --this.listSize;
+      return true;
+    }
+    return false;
+  }
+  
+  //Determining the number of elements in a List
+  function length() {
+    return this.listSize;
+  }
