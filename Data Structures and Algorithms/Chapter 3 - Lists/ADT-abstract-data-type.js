@@ -53,3 +53,21 @@ function remove(element) {
   function length() {
     return this.listSize;
   }
+
+  //Retrieving a list elements
+function toString() {
+    return this.dataStote;
+  }
+  
+  let names = new List();
+  names.append("Cynthia");
+  names.append("Raymond");
+  names.append("Barbara");
+  console.log(names.toString());
+  names.remove("Raymond");
+  console.log(names.toString());
+  
+  /* 
+  Result:
+  [ 'Cynthia', 'Raymond', 'Barbara' ]
+  */
