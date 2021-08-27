@@ -41,7 +41,7 @@ Array.matrix = function(numrows, numcols, initial) {
   */
   
 
-  // Two-Dimensional Arrays
+// Two-Dimensional Arrays
 
 let grades = [[89, 77, 78], [76, 82, 81], [91, 94, 89]];
 console.log(grades[2][2])
@@ -57,10 +57,10 @@ let grades = [[89, 77, 78], [76, 82, 81], [91, 94, 89]];
 let total = 0;
 let average = 0.0;
 for (let row = 0; row < grades.length; ++row){
-  for (let col = 0; col < grades[row].lenght; ++col){
-    total += grades[row][cow];
+  for (let col = 0; col < grades[row].length; ++col){
+    total += grades[row][col];
   }
-  average = total * grades[row].length;
+  average = total / grades[row].length;
   console.log("Student " + parseInt(row+1) + " average: " + average.toFixed(2));
   total = 0;
   average = 0.0;
@@ -68,7 +68,7 @@ for (let row = 0; row < grades.length; ++row){
 
 /* 
 Result:
-Student 1 average: 0.00
-Student 2 average: 0.00
-Student 3 average: 0.00
+Student 1 average: 81.33
+Student 2 average: 79.67
+Student 3 average: 91.33
 */
