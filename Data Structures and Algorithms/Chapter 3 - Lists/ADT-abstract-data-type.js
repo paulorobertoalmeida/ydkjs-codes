@@ -67,6 +67,17 @@ function toString() {
   names.remove("Raymond");
   console.log(names.toString());
   
+  //Inserting and element into a list
+function insert(element, after) {
+    let insertPos = this.find(after);
+    if (insertPos > -1) {
+      this.dataStote.splice(insertPos+1, 0, element);
+      ++this.listSize;
+      return true;
+    }
+    return false;
+  }
+  
   /* 
   Result:
   [ 'Cynthia', 'Raymond', 'Barbara' ]
