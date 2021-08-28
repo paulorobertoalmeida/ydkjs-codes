@@ -86,7 +86,15 @@ function clean() {
     this.listSize = this.pos = 0;
   }
   
-
+//Determining if a given Value is in a list
+fucntion contains(element) {
+    for (let i = 0; i < this.dataStore.length; i++) {
+      if (this.dataStore[i] == element) {
+        return true;
+      }
+    }
+    return false;
+  }
   /* 
   Result:
   [ 'Cynthia', 'Raymond', 'Barbara' ]
