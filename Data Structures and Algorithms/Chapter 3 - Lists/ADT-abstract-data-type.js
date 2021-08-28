@@ -77,7 +77,16 @@ function insert(element, after) {
     }
     return false;
   }
+
+  //Removing All elements from a list
+
+function clean() {
+    delete this.dataStore;
+    this.dataStore = [];
+    this.listSize = this.pos = 0;
+  }
   
+
   /* 
   Result:
   [ 'Cynthia', 'Raymond', 'Barbara' ]
