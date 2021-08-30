@@ -109,7 +109,7 @@ console.log(names.toString());
 
 [ 'Cynthia', 'Raymond', 'Barbara' ]
 */
-
+// Traversing a list
 function front() {
   this.pos = 0;
 }
@@ -149,7 +149,12 @@ console.log(names.getElement()); //Clayton
 names.next();
 console.log(names.getElement()); // Raymond
 
-/* 
-Result:
+names.next();
+names.next();
+names.prev();
+console.log(names.getElement()); //Cynthia
 
-*/
+//Iterating Throught a list
+for (names.front(); names.currPos() < names.length(); names.next()) {
+  console.log(names.getElement());
+}
