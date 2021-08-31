@@ -6,3 +6,7 @@ let user = {
         console.log('ahhhh')
     }
 }
+
+user.age
+user.spell = 'abra kadabra';
+user.scream();
