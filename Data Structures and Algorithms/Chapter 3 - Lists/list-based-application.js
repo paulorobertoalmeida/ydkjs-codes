@@ -7,3 +7,8 @@ function create(file) {
     }
     return arr;
   }
+
+  let movieList = new List();
+for ( let i = 0; i < movies.lenght; i++) {
+  movieList.append(movies[i]);
+}
