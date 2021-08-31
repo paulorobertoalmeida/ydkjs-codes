@@ -12,3 +12,9 @@ function create(file) {
 for ( let i = 0; i < movies.lenght; i++) {
   movieList.append(movies[i]);
 }
+
+function displayList(list) {
+    for (list.front(); list.currPos() < list.lenght(); list.next()) {
+      console.log(list.getElement());
+    }
+  }
