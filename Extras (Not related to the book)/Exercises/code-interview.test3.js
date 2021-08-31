@@ -20,7 +20,7 @@ function firstRecurringCharacter(input) {
     }
     return undefined
   }
-  
+  // Improved solution
   function firstRecurringCharacter2(input) {
     let map = {};
     for (let i = 0; i < input.length; i++) {
