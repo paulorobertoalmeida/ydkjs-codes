@@ -22,3 +22,10 @@ function displayList(list) {
       }
     }
   }
+
+  let customers = new List();
+
+function Customer(name, movie) {
+  this.name = name;
+  this.movie = movie;
+}
