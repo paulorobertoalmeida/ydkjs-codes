@@ -23,9 +23,16 @@ function displayList(list) {
     }
   }
 
-  let customers = new List();
+let customers = new List();
 
-function Customer(name, movie) {
-  this.name = name;
-  this.movie = movie;
-}
+  function Customer(name, movie) {
+    this.name = name;
+    this.movie = movie;
+  }
+  function checkOut(name, movie, filmList, customerList) {
+    let c = new Customer(name, movie);
+    customerList.append(c);
+    filmList.remove(movie);
+  } else {
+    console.log(movie + " is not available");
+  }
