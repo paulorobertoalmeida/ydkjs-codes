@@ -15,6 +15,10 @@ for ( let i = 0; i < movies.lenght; i++) {
 
 function displayList(list) {
     for (list.front(); list.currPos() < list.lenght(); list.next()) {
-      console.log(list.getElement());
+      if (list.getElement() instanceof Customer){
+      console.log(list.getElement()["name"] + ", " +list.getElement()["movie"]);
+      } else {
+        console.log(list.getElement());
+      }
     }
   }
