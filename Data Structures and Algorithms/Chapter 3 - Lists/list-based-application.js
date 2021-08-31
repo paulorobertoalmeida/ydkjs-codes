@@ -36,3 +36,17 @@ let customers = new List();
   } else {
     console.log(movie + " is not available");
   }
+
+
+let movies = createArr("");
+let movieList = new List();
+let customers = new List();
+for ( let i = 0; i < movies.length; i++) {
+  movieList.append(movies[i]);
+}
+
+console.log("available Movies: \n");
+displayList(movieList);
+checkOut("");
+console.log("\n Customer Rentals: \n");
+displayList(customers);
