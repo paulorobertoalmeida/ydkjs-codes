@@ -18,3 +18,26 @@ const one = () => {
 console.log('4');
 two();
 one();
+
+
+//Recursional
+
+function foo() {
+    foo();
+}
+
+foo();
+
+/* 
+RangeError: Maximum call stack size exceeded
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+    at foo (/script.js:4:5)
+*/
