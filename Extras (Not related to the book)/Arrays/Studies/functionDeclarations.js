@@ -27,3 +27,12 @@ function multiply(a,b) {
 }
 
 multiply(5,10);
+
+// ES6
+
+function multiply(a,b) {
+    return a * b;
+}
+
+// paramenter are 5 and 10
+// arguments functions can get arguments
