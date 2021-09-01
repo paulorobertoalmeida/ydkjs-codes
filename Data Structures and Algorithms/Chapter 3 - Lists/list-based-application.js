@@ -30,11 +30,13 @@ function Customer(name, movie) {
   this.movie = movie;
 }
 function checkOut(name, movie, filmList, customerList) {
+  if (movieList.contains(movie)) {
   let c = new Customer(name, movie);
   customerList.append(c);
   filmList.remove(movie);
-} else {
-  console.log(movie + " is not available");
+    } else {
+      console.log(movie + " is not available");
+    }
 }
 
 let movies = createArr("");
