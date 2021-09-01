@@ -7,4 +7,8 @@ function Stack() {
     this.pop = pop;
     this.peek = peek;
   }
+  function push(element) {
+    this.dataStack[this.top++] = element;
+  }
+  
   
