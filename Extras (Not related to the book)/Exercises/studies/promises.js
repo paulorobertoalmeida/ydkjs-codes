@@ -47,6 +47,8 @@ Promise.all([ promise, promise2, promise3, promise4])
 .then(values => {
     console.log(values);
 })
+
+
 // Fectching API's using promises
 const urls = [
     'https://jsonplaceholder.typicode.com/users',
@@ -60,4 +62,6 @@ Promise.all(urls.map(url => {
     console.log(results[0])
     console.log(results[1])
     console.log(results[2])
-})
+}).catch(err => console.log('error'))
+
+//fetch always returns promises
