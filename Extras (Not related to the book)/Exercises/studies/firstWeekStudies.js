@@ -6,8 +6,18 @@ let c = 100;
 
 // Call Stack
 console.log('1');
-console.log('2');
+
+setTimeout(() => {
+    console.log('2');
+},2000)
+
 console.log('3');
+
+/* 
+1
+3
+2
+*/
 
 const one = () => {
     const two = () => {
