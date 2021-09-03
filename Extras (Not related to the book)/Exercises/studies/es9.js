@@ -44,7 +44,6 @@ const getData = async function(){
 
 
 
-
 const loop = url => {
     for (url of urls) {
         console.log(urls);
