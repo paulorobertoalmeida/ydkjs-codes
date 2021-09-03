@@ -22,3 +22,19 @@ Promise.all(urls.map(url =>
             console.log('oops', err);
         }
     }
+
+
+    //improved exemple
+ 
+    Promise.all(urls.map(url => {
+        fetch('https://jsonplaceholder.typicode.com').then(people => people.json())
+    }))
+        .then(array =>{
+            trow Error;
+            console.log('1', array[0]);
+            console.log('1', array[1]);
+            console.log('1', array[2]);
+            console.log('1', array[3]);
+        }).catch(err => console.log('ughhh fix it', error));
+          .finally(() => console.log('extra'));
+    
