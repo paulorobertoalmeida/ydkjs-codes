@@ -82,7 +82,7 @@ const c = () => promisify('c', 3000);
 async function parallel() {
   const promises = [a(), b(), c()];
   const [output1, output2, output3] = await Promise.all(promises);
-  return `prallel is done: ${output1} ${output2} ${output3}`
+  return `parallel is done: ${output1} ${output2} ${output3}`
 }
 
 // Race
@@ -105,3 +105,11 @@ async function sequence() {
 sequence().then(console.log)
 parallel().then(console.log)
 race().then(console.log)
+
+
+// Promisse .Allsettled
+
+const promiseOne = new Promise((resolve, reject) => setTimeout(resolve, 3000))
+const promiseTwo = new Promise((resolve, reject) => setTimeout(resolve, 3000))
+
+Promise.all([promiseOne, promiseTwo]).then(data => console.log(data)).catch(e => console.log("somethings failed", e));
