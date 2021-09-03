@@ -24,3 +24,29 @@ function objectSpread (p1, p2, p3) {
 const {tiger, lion, ...rest} = animals; 
 
 objectSpread(tiger, lion, rest);
+
+
+// for await of
+
+
+const getData = async function(){
+    const arrayOfPromises = urls.map(url => fetch(url)).toArray();for await (let request of arrayOfPromises) {
+        const data = await request.json();
+        console.log(data)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+const loop = url => {
+    for (url of urls) {
+        console.log(urls);
+    }
+}
