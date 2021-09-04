@@ -34,3 +34,17 @@ console.log(typeof "x");
 
 console.log(3 > 2); //true
 console.log(3 < 2); //false
+
+// Logical Operatiors
+
+console.log(true && false);
+console.log(true && true);
+
+console.log(true || false);
+console.log(true || true);
+/* 
+false
+true
+true
+true
+*/
