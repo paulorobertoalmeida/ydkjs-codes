@@ -22,3 +22,15 @@ function factorial(n) {
   }
   
   console.log(factorial(8)); //Display: 40320
+
+  // Unary Operator
+
+console.log(typeof 4.5);
+
+console.log(typeof "x");
+// Display: number & string
+
+// comparation
+
+console.log(3 > 2); //true
+console.log(3 < 2); //false
