@@ -36,3 +36,12 @@ while (counter < 10) {
   counter = counter + 1;
 }
 console.log(result); //1024
+
+
+let yourName;
+do {
+  yourName = prompt("Who are you");
+} while (!yourName);
+console.log(yourName);
+
+
