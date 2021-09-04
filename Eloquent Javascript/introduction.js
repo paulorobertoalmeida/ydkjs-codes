@@ -21,4 +21,4 @@ function factorial(n) {
     }
   }
   
-  console.log(factorial(8));
+  console.log(factorial(8)); //Display: 40320
