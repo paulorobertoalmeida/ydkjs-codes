@@ -8,6 +8,17 @@ while (count <= 10) {
   count += 1;
 }
 
-console.log(total);
+console.log(total); // Display: 55
 
-// Display: 55
+
+// Typographic convertions
+
+function factorial(n) {
+    if (n == 0) {
+      return 1;
+    } else {
+      return factorial(n - 1) * n;
+    }
+  }
+  
+  console.log(factorial(8));
