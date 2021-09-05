@@ -90,3 +90,25 @@ for (let current = 20; ;current++) {
       break;
     }
   }
+
+// Dispatching on a Value with Switch
+
+/*
+if (x == "valur") action();
+else if (x == "value2") action2();
+else if (x == "value3") action3();
+else defaultAction(); */
+
+switch (prompt("what is the weather like")) {
+    case "rainy":
+      console.log("remember to bring umbrella");
+      break;
+    case "sunny":
+      console.log("dress lightly");
+    case "cloudy":
+      console.log("go outside");
+      break;
+    default:
+      console.log("unkown weather type");
+      break;
+  }  
