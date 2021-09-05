@@ -45,3 +45,12 @@ do {
 console.log(yourName);
 
 
+
+// Identing code
+
+if (false != true) {
+    console.log("thats make sense");
+    if (1 < 2) {
+      console.log("no surprise there");
+    }
+  }
