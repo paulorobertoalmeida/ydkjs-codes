@@ -109,6 +109,6 @@ switch (prompt("what is the weather like")) {
       console.log("go outside");
       break;
     default:
-      console.log("unkown weather type");
+      console.log("unknown weather type");
       break;
   }  
