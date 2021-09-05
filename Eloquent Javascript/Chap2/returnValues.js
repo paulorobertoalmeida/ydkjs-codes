@@ -80,3 +80,13 @@ for (let counter = 0; counter < 10; counter = counter +1) {
 }
 
 console.log(result); //1024
+
+
+// Breaking out of a Loop
+
+for (let current = 20; ;current++) {
+    if (current % 7 == 0) {
+      console.log(current); //21
+      break;
+    }
+  }
