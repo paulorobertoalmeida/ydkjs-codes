@@ -31,3 +31,16 @@ function minus(a, b) {
   }
   console.log(power(4)); //16
   console.log(power(2,6)); //64  
+
+
+// Closure
+
+function wrapValue(n) {
+    let local = n;
+    return () => local;
+  }
+  
+  let wrap1 = wrapValue(1);
+  let wrap2 = wrapValue(2);
+  console.log(wrap1()); //1
+  console.log(wrap2()); //2  
