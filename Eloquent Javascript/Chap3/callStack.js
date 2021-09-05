@@ -96,8 +96,7 @@ function findSolution(target) {
   }
   printFarmInventory(7, 11); //007
 
-
-  function printFarmInventory(number, label) {
+  function printZeroPaddedWithLabel(number, label) {
     let numberString = String(number);
     while (numberString.length < 3) {
       numberString = "0" + numberString;
