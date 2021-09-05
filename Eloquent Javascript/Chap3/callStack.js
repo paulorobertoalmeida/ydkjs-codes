@@ -51,3 +51,14 @@ function wrapValue(n) {
   
   let twice = multiplier(2);
   console.log(twice(5)); //10
+
+  // Recursion
+
+function power(base, exponent) {
+    if (exponent == 0) {
+      return 1;
+    } else {
+      return base * power(base, exponent -1);
+    }
+  }
+  console.log(power(2, 3)); //8
