@@ -112,3 +112,8 @@ switch (prompt("what is the weather like")) {
       console.log("unknown weather type");
       break;
   }  
+
+  let accountBalance = calculateBalance(account);
+accountBalance.adjust();
+let report = new Report();
+addToReport(accountBalance, report);
