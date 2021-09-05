@@ -47,3 +47,10 @@ const hummus = function(factor) {
     ingredient(2, "tablespoon", "olive oil");
     ingredient(0.5, "teaspoon", "cumin");
   };
+
+  let launchMissiles = function() {
+    missileSystem.launch("now");
+  };
+  if (safeMode){
+    launchMissiles = function() {/* do nothing*/};
+  }
