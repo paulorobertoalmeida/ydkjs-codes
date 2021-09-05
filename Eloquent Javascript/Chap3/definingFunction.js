@@ -54,3 +54,18 @@ const hummus = function(factor) {
   if (safeMode){
     launchMissiles = function() {/* do nothing*/};
   }
+
+  const power = (base, expoent) => {
+    let result = 1;
+    for (let count = 0; count < expoent; count++) {
+      result *= base;
+    }
+    return result;
+  };
+  
+  const square1 = (x) => {return x * x; };
+  const square2= x => x * x;
+  
+  const horn = () => {
+    console.log("Toot");
+  };  
