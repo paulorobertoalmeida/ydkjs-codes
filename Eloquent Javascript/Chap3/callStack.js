@@ -95,3 +95,18 @@ function findSolution(target) {
     console.log(`${chickenString} Chickens`);
   }
   printFarmInventory(7, 11); //007
+
+
+  function printFarmInventory(number, label) {
+    let numberString = String(number);
+    while (numberString.length < 3) {
+      numberString = "0" + numberString;
+    }
+    console.log(`${numberString} ${label}`);
+  }
+  function printFarmInventory(cows, chickens, pigs) {
+    printZeroPaddedWithLabel(cows, "Cows");
+    printZeroPaddedWithLabel(cows, "Chickens");
+    printZeroPaddedWithLabel(cows, "Pigs");
+  }
+  printFarmInventory(7, 11, 3);
