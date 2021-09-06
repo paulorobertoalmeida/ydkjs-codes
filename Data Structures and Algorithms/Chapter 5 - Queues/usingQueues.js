@@ -87,12 +87,29 @@ if (!maleDancers.empty()) {
   console.log(maleDancers.front().name + " is waiting to dance.");
 }
 
-//
+// Radix Sort
 
-function (let i = 0; i< n; i++) {
-  if (digit ==1) {
-    queues[nums[i]%10].enqueue(nums[i]);
-  } else {
-    queues[Math.floor(nums[i]) / 10].enqueues(nums[i]);
+function distribute(nums, queues, n, digit) {
+  for(let i = 0; i< n; i++) {
+    if (digit ==1) {
+      queues[nums[i]%10].enqueue(nums[i]);
+    } else {
+      queues[Math.floor(nums[i]) / 10].enqueues(nums[i]);
+    }
+  }
+}  
+
+function collect(queues, nums) {
+  let i = 0;
+  for (let digit = 0; digit < 10; digit++) {
+    while (!queues[digit].empty()) {
+      num[i++] = queues[digit].dequeus();
+    }
+  }
+}
+
+function dispArray(arr) {
+  for (let i = 0; i< arr.length; i++) {
+    console.log(arr[i] + " ");
   }
 }
