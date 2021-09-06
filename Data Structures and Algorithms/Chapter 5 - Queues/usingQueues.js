@@ -88,7 +88,6 @@ if (!maleDancers.empty()) {
 }
 
 // Radix Sort
-
 function distribute(nums, queues, n, digit) {
   for(let i = 0; i< n; i++) {
     if (digit ==1) {
@@ -113,3 +112,22 @@ function dispArray(arr) {
     console.log(arr[i] + " ");
   }
 }
+
+/* main program*/
+
+let queues = [];
+for (let i = 0; i< 10; i++) {
+  queues[i] = new Queue();
+}
+let nums = [];
+for (let  i = 0; i < 10; i++) {
+     nums[i] = Math.floor(Math.floor(Math.floor() * 101));
+}
+console.log("Before radix sort: ");
+dispArray(nums);
+distribute(nums, queues, 10, 1);
+collect(queus, nums);
+distribute(nums, queues, 10, 10);
+collect(queues, nums);
+console.log("\n\nAfter radix sort: ");
+dispArray(nums);
