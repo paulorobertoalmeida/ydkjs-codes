@@ -134,3 +134,11 @@ distribute(nums, queues, 10, 10);
 collect(queues, nums);
 console.log("\n\nAfter radix sort: ");
 dispArray(nums);
+
+
+//priority Queues
+
+function Patient(name, code) {
+  this.name = name;
+  this.code = code;
+}
