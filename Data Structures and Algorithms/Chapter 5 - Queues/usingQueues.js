@@ -86,3 +86,13 @@ if (!femaleDancers.empty()) {
 if (!maleDancers.empty()) {
   console.log(maleDancers.front().name + " is waiting to dance.");
 }
+
+//
+
+function (let i = 0; i< n; i++) {
+  if (digit ==1) {
+    queues[nums[i]%10].enqueue(nums[i]);
+  } else {
+    queues[Math.floor(nums[i]) / 10].enqueues(nums[i]);
+  }
+}
