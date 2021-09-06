@@ -93,7 +93,7 @@ function distribute(nums, queues, n, digit) {
     if (digit ==1) {
       queues[nums[i]%10].enqueue(nums[i]);
     } else {
-      queues[Math.floor(nums[i]) / 10].enqueues(nums[i]);
+      queues[Math.floor(nums[i]) / 10].enqueue(nums[i]);
     }
   }
 }  
@@ -102,14 +102,15 @@ function collect(queues, nums) {
   let i = 0;
   for (let digit = 0; digit < 10; digit++) {
     while (!queues[digit].empty()) {
-      num[i++] = queues[digit].dequeus();
+      num[i++] = queues[digit].dequeu();
     }
   }
 }
-
+let nums;
+let arr = []
 function dispArray(arr) {
-  for (let i = 0; i< arr.length; i++) {
-    console.log(arr[i] + " ");
+  for (let i = 0; i < arr.length; i++) {
+    prompt(arr[i] + " ");
   }
 }
 
@@ -117,11 +118,13 @@ function dispArray(arr) {
 
 let queues = [];
 for (let i = 0; i< 10; i++) {
+  function Queue(){
   queues[i] = new Queue();
 }
 let nums = [];
 for (let  i = 0; i < 10; i++) {
      nums[i] = Math.floor(Math.floor(Math.floor() * 101));
+}
 }
 console.log("Before radix sort: ");
 dispArray(nums);
