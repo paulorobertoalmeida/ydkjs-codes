@@ -159,3 +159,25 @@ function toString(){
   }
   return retStr; 
 }
+
+let p = new Patient("Smith", 5);
+let ed = new Queue();
+ed.enqueue(p);
+p = new Patient("Jones", 4);
+ed.enqueue(p);
+p = new patient("Brown", 1);
+ed.enqueue(p);
+p = new Patient("Igram", 1);
+ed.enqueue(p);
+console.log("patient being treated: " + seen[0].name);
+console.log(ed.toString());
+//other round
+
+let seen = ed.dequeue();
+console.log("patient being treated: " + seen[0].name);
+console.log("patient waiting to be Seen");
+console.log(ed.toString());
+let seen = ed.dequeue();
+console.log("patient being Seen: " + seen[0].name);
+console.log("patient waiting to be Seen: ");
+console.log(ed.toString());
