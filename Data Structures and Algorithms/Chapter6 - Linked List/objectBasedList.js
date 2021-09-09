@@ -72,3 +72,11 @@ function Node(element) {
     this.next = next;
     this.previous = null;
 }
+
+function insert(newElement, item) {
+    let newElement = new Node(newElement);
+    let current = this.find(item);
+    newNode.next = current.next;
+    newNode.previous = current;
+    current.next = newNode;
+}
