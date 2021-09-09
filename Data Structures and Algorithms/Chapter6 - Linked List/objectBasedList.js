@@ -64,3 +64,11 @@ city.display();
 console.log();
 cities.remove("Carlisle");
 cities.display();
+
+// Doubly Linked lists
+
+function Node(element) {
+    this.element = element;
+    this.next = next;
+    this.previous = null;
+}
