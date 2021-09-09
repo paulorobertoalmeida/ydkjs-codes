@@ -80,3 +80,11 @@ function insert(newElement, item) {
     newNode.previous = current;
     current.next = newNode;
 }
+
+function remove(item) { {
+    let currNode = this.head;
+    while (!(currNode.next == null)) {
+        currNode = currNode.next;
+    }
+    return curNode;
+}}
