@@ -147,6 +147,12 @@ function findPrevious(item){
   return currNode;
 }
 
+function remove(item) {
+  var prevNode = this.findPrevious(item);
+  if(!(prevNode.next == null)) {
+    prevNode.next = prevNode.next.next;
+  }
+}
 
 /* main program */
 
