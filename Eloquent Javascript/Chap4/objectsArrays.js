@@ -13,3 +13,12 @@ console.log(listOfNumbers[2 -1]);
 // PRoperties
 null.lenght;
 //TypeError: Cannot read properties of null (reading 'lenght')
+
+// Methods
+
+let doh = "Doh";
+console.log(typeof doh.toUpperCase);
+//function
+
+console.log(doh.toLocaleUpperCase());
+//DOH
