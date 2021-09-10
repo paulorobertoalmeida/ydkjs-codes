@@ -88,3 +88,19 @@ function remove(item) { {
     }
     return curNode;
 }}
+
+function insert(newElement,item) {
+  let newNode = new Node(newElement);
+  let current = this.find(item);
+  newNode.next = current.next;
+  current.next = newNode;
+}
+
+function display(){
+  let currNode = this.head;
+  while(!(currNode.next = null)) {
+    console.log(currNode.next.element);
+    currNode = currNode.next;
+
+  }
+} 
