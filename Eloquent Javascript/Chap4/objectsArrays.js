@@ -47,3 +47,8 @@ let day1 = {
   day1.wolf = false;
   //false
   console.log(day1.wolf);
+
+  let descriotions = {
+    work: "Went to work",
+    "touched tree": "Touched a tree"
+  }
