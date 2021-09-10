@@ -138,6 +138,16 @@ fucntion display() {
     currNode = currNode.next;
   }
 }
+
+function findPrevious(item){
+  var currNode = this.head;
+  while (!(currNode.previous == null) && (currNode.previous.element != item)) {
+    currNode = currNode.next;
+  }
+  return currNode;
+}
+
+
 /* main program */
 
 var cities = new LList();
