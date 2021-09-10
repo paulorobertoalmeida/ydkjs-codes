@@ -115,3 +115,33 @@ function LList() {
   //this.remove = remove;
   this.display = display;
 }
+
+function find(item) {
+  var currNode = this.head;;
+  while (currNode.element != item) {
+    currNode = currNode.next;
+  }
+  return currNode;
+}
+
+function insert(newElement, item) {
+  var currNode = new Node(newElement);
+  var current = this.find(item);
+  newNode.next = current.next;
+  current.next = newNode;
+}
+
+fucntion display() {
+  var currNode = this.head;
+  while (!(currNode.next == null)) {
+    document.write(currNode.next.element);
+    currNode = currNode.next;
+  }
+}
+/* main program */
+
+var cities = new LList();
+cities.insert("Conway", "head");
+cities.insert("Russelsville", "Conway");
+cities.insert("Alma", "Russelsville");
+cities.display();
