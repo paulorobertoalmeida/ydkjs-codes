@@ -52,3 +52,14 @@ let day1 = {
     work: "Went to work",
     "touched tree": "Touched a tree"
   }
+
+let anObject = {left: 1, right: 2}
+console.log(anObject.left);
+//1
+delete anObject.left;
+console.log(anObject.left);
+//undefied
+console.log("left" in anObject);
+//false
+console.log("right" in anObject);
+//true
