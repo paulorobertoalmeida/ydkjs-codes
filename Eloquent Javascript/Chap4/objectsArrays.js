@@ -9,3 +9,7 @@ console.log(listOfNumbers[0]);
 
 console.log(listOfNumbers[2 -1]);
 //3
+
+// PRoperties
+null.lenght;
+//TypeError: Cannot read properties of null (reading 'lenght')
