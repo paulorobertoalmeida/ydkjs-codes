@@ -32,3 +32,18 @@ console.log(sequence.pop());
 //5
 console.log(sequence);
 //[ 1, 2, 3, 4 ]
+
+
+// Objects
+
+let day1 = {
+    squirrel: false,
+    events: ["word", "touched tree", "pizza","running"]
+  };
+  console.log(day1.squirrel);
+  //false
+  console.log(day1.wolf)
+  //undefined
+  day1.wolf = false;
+  //false
+  console.log(day1.wolf);
