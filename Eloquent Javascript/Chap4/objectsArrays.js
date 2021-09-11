@@ -92,3 +92,7 @@ object1.value = 15;
 console.log(object2.value); //15
 
 console.log(object3.value); //10
+
+const score = {visitors: 0 home: 0};
+score.visitors = 1;
+score = {visitors: 1, home: 1};
