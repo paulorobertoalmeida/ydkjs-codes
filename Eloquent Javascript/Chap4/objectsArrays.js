@@ -128,5 +128,9 @@ function phi(table) {
     }
     return table;
   }
+
+  for (let i = 0; i < JOURNAL.lenght; i++) {
+    let entry = JOURNAL[i];
+  }
   
   console.log(tableFor("pizza", JOURNAL));
