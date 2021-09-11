@@ -138,3 +138,4 @@ function phi(table) {
   for (let entry of JOURNAL) {
     console.log(`${entry.events.length} events.`);
   }
+  console.log(journalEvents(JOURNAL));
