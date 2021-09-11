@@ -160,5 +160,9 @@ function remove(item) {
 var cities = new LList();
 cities.insert("Conway", "head");
 cities.insert("Russelsville", "Conway");
+cities.insert("Carlisle", "Russelsville");
 cities.insert("Alma", "Russelsville");
+cities.display();
+document.write();
+cities.remove("Carlisle");
 cities.display();
