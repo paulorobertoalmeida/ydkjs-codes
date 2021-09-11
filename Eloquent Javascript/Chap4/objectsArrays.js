@@ -134,3 +134,7 @@ function phi(table) {
   }
   
   console.log(tableFor("pizza", JOURNAL));
+
+  for (let entry of JOURNAL) {
+    console.log(`${entry.events.length} events.`);
+  }
