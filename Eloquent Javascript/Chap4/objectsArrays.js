@@ -96,3 +96,14 @@ console.log(object3.value); //10
 const score = {visitors: 0 home: 0};
 score.visitors = 1;
 score = {visitors: 1, home: 1};
+
+// The Lycanthope's Log
+let jounal = [];
+
+function addEntry(events, squirrel) {
+  journal.push({events, squirrel});
+}
+
+addEntry(["work", "touched", "pizza", "running", "television"], false);
+addEntry(["work", "ice cream", "cauliflower", "lasagna", "touched tree", "brushed teeth"], false);
+addEntry(["weekend", "cycling", "break", "peanuts", "beer"], true);
