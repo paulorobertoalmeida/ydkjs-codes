@@ -189,3 +189,12 @@ function max(...numbers) {
   
 let words = ["never", "fully"];
 console.log(["will", ...words, "undestand"]); //[ 'will', 'never', 'fully', 'undestand' ]
+
+
+function randomPointOnCircle(radius) {
+    let angle = Math.random() * 2 * Math.PI;
+    return {x: radius * Math.cos(angle),
+            y: radius * Math.sin(angle)};
+  }
+  console.log(randomPointOnCircle(2)); // { x: -0.2162728235193082, y: 1.988272130722298 }
+  
