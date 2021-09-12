@@ -7,3 +7,29 @@ while (count <= 10) {
   count += 1;
 } 
 console.log(total); //55
+
+console.log(sum(range(1, 10)));
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+  }
+  
+  /* 
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  */
+
+  function repeat(n, action) {
+    for (let i= 0; i < n; i++) {
+      action(1);
+    }
+  }
+  repeat(3, console.log); //1,1,1
