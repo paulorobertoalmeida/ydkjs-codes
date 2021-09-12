@@ -139,3 +139,10 @@ function phi(table) {
     console.log(`${entry.events.length} events.`);
   }
   console.log(journalEvents(JOURNAL));
+
+  // Further Arrayology
+
+let todoList = [];
+function remeber(task) {
+  todoList.push(task);
+}
