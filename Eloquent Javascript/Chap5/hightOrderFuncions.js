@@ -33,3 +33,19 @@ for (let i = 0; i < 10; i++) {
     }
   }
   repeat(3, console.log); //1,1,1
+
+let labels = [];
+repeat(5, i => {
+  labels.push('Unit `${i+ 1}`');
+});
+console.log(labels);
+/*
+1
+1
+1
+[ 'Unit ${i+ 1}',
+  'Unit ${i+ 1}',
+  'Unit ${i+ 1}',
+  'Unit ${i+ 1}',
+  'Unit ${i+ 1}' ]
+*/
