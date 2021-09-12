@@ -187,4 +187,5 @@ function max(...numbers) {
   let numbers = [5,1,7];
   console.log(max(...numbers));
   
-  
+let words = ["never", "fully"];
+console.log(["will", ...words, "undestand"]); //[ 'will', 'never', 'fully', 'undestand' ]
