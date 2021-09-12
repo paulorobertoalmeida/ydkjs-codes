@@ -158,3 +158,9 @@ function remove(array, index) {
     return array.slice(0, index).concat(array.slive(index + 1));
   }
   console.log(remove(["a","b", "c","d","e"], 2));
+
+  //Strings and Theur properties
+
+let kim = "Kim";
+kim.age = 88;
+console.log(kim.age); //undefined
