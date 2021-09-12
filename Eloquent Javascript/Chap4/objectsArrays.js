@@ -170,3 +170,7 @@ let words = sentence.split(" ");
 console.log(words); //[ 'Secretarybirds', 'specialize', 'in', 'stomping' ]
 console.log(words.join(". ")); /*[ 'Secretarybirds', 'specialize', 'in', 'stomping' ]
 Secretarybirds. specialize. in. stomping */
+
+let string = "abc";
+console.log(string.length); //3
+console.log(string[1]); //b
