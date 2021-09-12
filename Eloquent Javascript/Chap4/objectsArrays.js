@@ -197,4 +197,4 @@ function randomPointOnCircle(radius) {
             y: radius * Math.sin(angle)};
   }
   console.log(randomPointOnCircle(2)); // { x: -0.2162728235193082, y: 1.988272130722298 }
-  
+  console.log(Math.random());
