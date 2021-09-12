@@ -140,9 +140,16 @@ function phi(table) {
   }
   console.log(journalEvents(JOURNAL));
 
-  // Further Arrayology
+// Further Arrayology
 
 let todoList = [];
-function remeber(task) {
+function remember(task) {
   todoList.push(task);
+}
+
+function  getTask() {
+  return todoList.shift();
+}
+function rememberUrgently(task) {
+  todoList.unshift(task);
 }
