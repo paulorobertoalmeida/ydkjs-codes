@@ -217,4 +217,5 @@ function randomPointOnCircle(radius) {
       (n01 + n11) * (n00 + n10));
   }
   
-  
+  let {name} = {name: "Faraji", age: 23};
+  console.log(name); //Faraji  
