@@ -153,3 +153,8 @@ function  getTask() {
 function rememberUrgently(task) {
   todoList.unshift(task);
 }
+
+function remove(array, index) {
+    return array.slice(0, index).concat(array.slive(index + 1));
+  }
+  console.log(remove(["a","b", "c","d","e"], 2));
