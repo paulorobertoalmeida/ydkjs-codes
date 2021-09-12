@@ -197,4 +197,24 @@ function randomPointOnCircle(radius) {
             y: radius * Math.sin(angle)};
   }
   console.log(randomPointOnCircle(2)); // { x: -0.2162728235193082, y: 1.988272130722298 }
-  console.log(Math.random());
+  console.log(Math.random()); //0.08404512973439848
+
+  console.log(Math.random(Math.random() * 10)); //0.48362542429148947
+
+// Destructuring
+  function phi(table) {
+    return (table[3] * table[0] - table[2] * table[1]) /
+      Math.sqrt((table[2] + table[3])*
+                (table[0] + table[1])*
+                (table[1] + table[3])*
+                (table[0] + table[2]));
+  }
+
+
+  function phi([n00, n01, n10, n11]) {
+    return (n11 * n00 - n10 * n01) /
+      Math.sqrt((n10 + n11) * (n00 + n01) *
+      (n01 + n11) * (n00 + n10));
+  }
+  
+  
