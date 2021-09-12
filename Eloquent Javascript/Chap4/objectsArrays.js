@@ -159,7 +159,7 @@ function remove(array, index) {
   }
   console.log(remove(["a","b", "c","d","e"], 2));
 
-  //Strings and Theur properties
+  //Strings and Their properties
 
 let kim = "Kim";
 kim.age = 88;
