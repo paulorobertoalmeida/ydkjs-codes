@@ -97,3 +97,17 @@ function filter(array, test) {
 }
 
 console.log(filter(SCRIPTS, script => script.living));
+
+
+//Transforming with map
+
+function map(array, transform) {
+    let mapped = [];
+    for (let element of array) {
+        mapped.push(transform(element));
+    }
+    return mapped;
+}
+
+let rtlScript = SCRIPTS.filter(s => s.direction == "rtl");
+console.log(map(rtlScript, s => s.name));
