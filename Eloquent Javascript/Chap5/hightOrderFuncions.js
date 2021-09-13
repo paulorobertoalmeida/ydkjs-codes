@@ -49,3 +49,17 @@ console.log(labels);
   'Unit ${i+ 1}',
   'Unit ${i+ 1}' ]
 */
+
+function noisy(f) {
+    return (...args) => {
+        console.log("calling with", args);
+        let result = f(...args);
+        console.log("calling with", args, ", returned", result);
+        return result;
+    }
+}
+noisy(Math.min)(3,2,1);
+/* 
+calling with (3) [3, 2, 1]
+VM224:6 calling with (3) [3, 2, 1] , returned 1
+*/

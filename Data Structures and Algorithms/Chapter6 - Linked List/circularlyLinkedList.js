@@ -7,3 +7,12 @@ function LList() {
     this.findPrevious = findPrevious;
     this.remove = remove;
 }
+
+function display() {
+    var currNode = this.head;
+    while (!(currNode.next == null) &&  
+           !(currNode.next.element == head)) {
+        console.log(currNode.next.element);
+        currNode = currNode.next;
+    }
+}
