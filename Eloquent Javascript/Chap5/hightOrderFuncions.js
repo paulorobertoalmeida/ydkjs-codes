@@ -78,3 +78,7 @@ repeat(3, n => {
         console.log(n, "is not even");
     });
 });
+
+
+["A","B"].forEach(l => console.log(l)); //A, B  
+//l for letter
