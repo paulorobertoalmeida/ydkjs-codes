@@ -31,3 +31,8 @@ function count() {
     }
     return n;
 } 
+
+var nums() = new Array();
+nums[0] = 1;
+nums[1] = 2;
+console.log(nums.length);
