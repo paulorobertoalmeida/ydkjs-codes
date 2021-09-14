@@ -1,8 +1,11 @@
 // Dictionary class
 
 function Dictionary() {
+    this.add = add;
     this.datastore = new Array();
-
+    this.find = find;
+    this.remove = remove;
+    this.showAll = showAll;
 }
 
 function add(key, value) {
