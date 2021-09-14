@@ -198,3 +198,21 @@ function average(array) {
   }
 
   console.log(countBy([1,2,3,4,5], n => n > 2));
+
+  // Exemple 1
+
+  function textScripts(text) {
+      let scripts = countBy(text, char => {
+          let script = characterSctipt(char.codePointAt(0));
+          return script ? script.name : "none";
+      }).filter(({name})=> name != "none");
+      
+      let total = scripts.reduce((n, {count}) => n + count, 0);
+      if (total == 0) return "No scripts founds";
+
+      return scripts.map(({name, count}) => {
+          return `${Math.round(count * 100 / total)}% ${name}`;
+      }).join(", ");
+  }
+
+  console.log();
