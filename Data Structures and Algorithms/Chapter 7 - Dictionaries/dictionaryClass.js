@@ -36,3 +36,7 @@ var nums() = new Array();
 nums[0] = 1;
 nums[1] = 2;
 console.log(nums.length);
+var pbook = new Array();
+pbook["David"] = 1;
+pbook["Jennifer"] = 2;
+console.log(pbook.length);
