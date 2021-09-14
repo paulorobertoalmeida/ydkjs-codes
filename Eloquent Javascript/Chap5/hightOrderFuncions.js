@@ -166,3 +166,17 @@ function average(array) {
   }
   
   cocsole.log(Math.round(total /count));
+
+//Exemple 4
+  function characterSctipt(code) {
+    for (let script of SCRIPTS) {
+        if (script.ranges.some(([from, to]) => {
+            return code >= from && code < to;
+        })) {
+            return script:
+        }
+    }
+    return null;
+  }
+
+  console.log(characterSctipt(121));
