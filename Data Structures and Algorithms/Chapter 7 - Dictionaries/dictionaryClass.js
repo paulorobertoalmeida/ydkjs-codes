@@ -40,3 +40,9 @@ var pbook = new Array();
 pbook["David"] = 1;
 pbook["Jennifer"] = 2;
 console.log(pbook.length);
+
+function clear() {
+    for each (let key in Object.keys(this.datastore)) {
+        delete this.datastore[key];
+    }
+}
