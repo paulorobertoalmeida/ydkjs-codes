@@ -135,3 +135,6 @@ function characterCount(script) {
 console.log(SCRIPTS.reduce((a,b) => {
     return characterCount(a) < characterCount(b) ? b : a;
 }));
+
+// COmposability
+
