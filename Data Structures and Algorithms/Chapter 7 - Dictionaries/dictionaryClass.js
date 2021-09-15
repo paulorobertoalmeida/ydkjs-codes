@@ -86,3 +86,14 @@ function clear() {
         delete this.datastore[key];
     }
 }
+
+load();
+var pbook = new Dictionary();
+pbook.add("Raymond", "123");
+pbook.add("David", "123");
+pbook.add("Cynthia", "123");
+console.log("Number of entries: " + pbook.count());
+console.log("David's extension: " + pbook.find("David"));
+pbook.showAll();
+pbook.clar();
+console.log("Number of entries: " + pbook.count());
