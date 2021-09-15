@@ -59,3 +59,30 @@ function Dictionary() {
     this.clear = clear;
 }
 
+function add(key, value) {
+    this.datastore[key] = value;
+}
+
+function remove(key) {
+    delete this.datastore[key];
+}
+
+function showAll() {
+    for each(var key in Object.keys(this.datastore)) {
+        console.log(key + " -> " + this.datastore[key]);
+    }
+}
+
+function count() {
+    var n = 0;
+    for each(var key in Object.keys(this.datastore)) {
+        n++;
+    }
+    return n;
+}
+
+function clear() {
+    for each(var key in Object.keys(this.datastore)) {
+        delete this.datastore[key];
+    }
+}
