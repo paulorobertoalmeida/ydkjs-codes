@@ -16,3 +16,8 @@ let whiteRabbit = {type: "white", speak};
 let hungryRabbit = {type: "hungry", speak};
 
 whiteRabbit.speak("Oh my ears and whiskers, " + "how late its getting!");
+
+function normilize() {
+    console.log(this.coords.map(n => n / this.lenght));
+}
+normilize.call({coords: [0,2,3], lenght: 5});
