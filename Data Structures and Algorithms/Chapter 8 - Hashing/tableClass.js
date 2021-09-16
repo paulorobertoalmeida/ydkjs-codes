@@ -19,6 +19,15 @@ function simpleHash(data) {
     }
     return total % this.table.length;
 }
+function showDistro(){
+    var n = 0;
+    for (var i = 0; i < this.table.length; i++) {
+        if (this.table[i]. != undefined) {
+            console.log(i + " : " + this.table[i]);
+        }
+    }
+}
+
 
 //Choosing a Hash Function
 
