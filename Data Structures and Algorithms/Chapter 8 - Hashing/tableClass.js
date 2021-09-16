@@ -39,3 +39,12 @@ function simpleHash(data) {
     return total % this.table.length;
 }
 
+// Simple hash function 
+
+var someNames= ["David", "Jennifer", "Donnie", "Raymond", "Cynthia", "Mike", "Clayton", "Danny", "Jonathan"];
+var hTable = new HashTable();
+for (let i = 0; i < someNames.length; i++) {
+    hTable.add(someNames[i]);
+}
+hTable.showDistro();
+
