@@ -14,9 +14,11 @@ function put(data) {
 }
 
 function simpleHash(data) {
-    var total = 0;for (var i = 0; i< data.length; i++) {
+    var total = 0;
+    for (var i = 0; i< data.length; i++) {
         total += data.charCodeAt(i);
     }
+    console.log("Hash value: " + data.length " -> " + total);
     return total % this.table.length;
 }
 function showDistro(){
@@ -47,4 +49,12 @@ for (let i = 0; i < someNames.length; i++) {
     hTable.add(someNames[i]);
 }
 hTable.showDistro();
+
+
+function simpleHash(data) {
+    var total = 0;for (var i = 0; i< data.length; i++) {
+        total += data.charCodeAt(i);
+    }
+    return total % this.table.length;
+}
 
