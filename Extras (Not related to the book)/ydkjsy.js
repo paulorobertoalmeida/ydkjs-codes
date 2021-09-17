@@ -30,3 +30,35 @@ class Page {
   Aritmetic: + - * / ...
   Trigonometry; sin, cos, tan ...
   */
+
+
+function Publication(title, author, pubDate) {
+  var publicAPI = {
+    print() {
+      console.log(`
+      Title: ${title}
+      By: ${author}
+      ${pubDate}
+      `);
+    }
+  };
+  return publicAPI;
+} 
+
+function Book(bookDetails) {
+  var pub = Publication(
+    bookDetails.title,
+    bookDetails.author,
+    bookDetails.publishedOn
+  );
+  var publicAPI = {
+    print() {
+      pub.print();
+      console.log(`
+      Published: ${bookDetails.publiser}
+      ISBN: ${bookDetails.ISBN}
+      `);
+    }
+  };
+  return publicAPI;
+}
