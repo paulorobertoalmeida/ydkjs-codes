@@ -62,3 +62,4 @@ function Book(bookDetails) {
   };
   return publicAPI;
 }
+

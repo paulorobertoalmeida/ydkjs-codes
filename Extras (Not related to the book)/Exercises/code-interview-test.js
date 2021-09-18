@@ -1,4 +1,5 @@
 // Coding Exercises
+//Exercise 1
 let newArray = [];
 
 for (let i = 0; i < 1000; i++) {
