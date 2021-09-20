@@ -64,3 +64,7 @@ Rabbit.prototype.speak = function(line) {
   console.log(`The ${this.type} rabbit says '${line}'`);
 };
 let weirdRabbit = new Rabbit("weird");
+
+console.log(Object.getPrototypeOf(Rabbit) ==
+Function.prototype); //true
+console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype); //true
