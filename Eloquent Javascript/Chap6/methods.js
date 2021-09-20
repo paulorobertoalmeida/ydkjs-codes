@@ -21,3 +21,9 @@ function normilize() {
     console.log(this.coords.map(n => n / this.lenght));
 }
 normilize.call({coords: [0,2,3], lenght: 5}); //[0, 0.4, 0.6]
+
+
+// Prototypes
+
+let empty = {};
+console.log(empty.toString);
