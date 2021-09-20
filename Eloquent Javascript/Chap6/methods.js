@@ -82,3 +82,7 @@ class Rabbit {
 
 let killerRabbit = new Rabbit("Killer");
 let blackRabbit = new Rabbit("black");
+
+
+let object = new class { getWord(){ return "hello"; } };
+console.log(object.getWord()); //hello
