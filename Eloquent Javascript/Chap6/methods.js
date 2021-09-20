@@ -26,4 +26,5 @@ normilize.call({coords: [0,2,3], lenght: 5}); //[0, 0.4, 0.6]
 // Prototypes
 
 let empty = {};
-console.log(empty.toString);
+console.log(empty.toString); //[Function: toString]
+console.log(empty.toString()); //[object Object]
