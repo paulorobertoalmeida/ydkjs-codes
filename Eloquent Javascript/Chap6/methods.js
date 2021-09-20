@@ -33,3 +33,6 @@ console.log(empty.toString()); //[object Object]
 console.log(Object.getPrototypeOf({}) == Object.prototype); // true
 console.log(Object.getPrototypeOf(Object.prototype)); //null
 
+console.log(Object.getPrototypeOf(Math.max) == Function.prototype); // true
+console.log(Object.getPrototypeOf([]) == Array.prototype); //true
+
