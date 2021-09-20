@@ -28,3 +28,8 @@ normilize.call({coords: [0,2,3], lenght: 5}); //[0, 0.4, 0.6]
 let empty = {};
 console.log(empty.toString); //[Function: toString]
 console.log(empty.toString()); //[object Object]
+
+
+console.log(Object.getPrototypeOf({}) == Object.prototype); // true
+console.log(Object.getPrototypeOf(Object.prototype)); //null
+
