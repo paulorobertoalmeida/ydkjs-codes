@@ -86,3 +86,15 @@ let blackRabbit = new Rabbit("black");
 
 let object = new class { getWord(){ return "hello"; } };
 console.log(object.getWord()); //hello
+
+// OVERRRIDING DEVIRED PROPERTIES
+
+Rabbit.prototype.teeth = "small";
+console.log(killerRabbit.teeth);
+
+killerRabbit.teeth = "long, sharp, and bloody";
+console.log(killerRabbit.teeth);
+
+console.log(blackRabbit.teeth);
+
+console.log(Rabbit.prototype.teeth);
