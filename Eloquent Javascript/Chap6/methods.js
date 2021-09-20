@@ -68,3 +68,17 @@ let weirdRabbit = new Rabbit("weird");
 console.log(Object.getPrototypeOf(Rabbit) ==
 Function.prototype); //true
 console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype); //true
+
+// CLASS NOTATION
+
+class Rabbit {
+  constructor(type) {
+    this.type = type;
+  }
+  speak(line) {
+    console.log(`The ${this.type} rabbit says '${line}'`);
+  }
+}
+
+let killerRabbit = new Rabbit("Killer");
+let blackRabbit = new Rabbit("black");
