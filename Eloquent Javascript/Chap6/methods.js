@@ -98,3 +98,9 @@ console.log(killerRabbit.teeth);
 console.log(blackRabbit.teeth);
 
 console.log(Rabbit.prototype.teeth);
+
+console.log(Array.prototype.toLocaleString == Object.prototype.toString);
+
+console.log([1,2].toString());
+
+console.log(Object..prototype.toString.call([1,2]));
