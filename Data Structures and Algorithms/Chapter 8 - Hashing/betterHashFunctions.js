@@ -130,3 +130,12 @@ while (name != "quit") {
   prompt("Name for number (Enter quit to stop): ");
 }
 
+// Handling Collisions
+
+function buildChains() {
+  for (let i = 0; i < this.table.length; i++) {
+    this.table[i] = new Array();
+  }
+}
+
+
