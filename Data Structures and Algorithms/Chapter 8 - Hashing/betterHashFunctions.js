@@ -50,3 +50,22 @@ for (let i = 0; i < someNames.length; i++) {
 }
 
 hTable.showDistro();
+
+// Hash Integer Keys
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function genStuData(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    var num = "";
+    for (let j = 1; j <= 9; i++) {
+      num += Math.floor(Math.random() * 10);
+    }
+    num += getRandomInt(50, 100);
+    arr[i] = num;
+  }
+}
+
+
