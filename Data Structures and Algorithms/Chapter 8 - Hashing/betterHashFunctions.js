@@ -99,3 +99,34 @@ for (let i = 0; i < students.length; i++) {
 }
 hTable.showDistro();
 
+
+// Storing and Retrieving Data in a Hash Table
+
+function put(key, data) {
+  let pos = this.betterHash(key);
+  this.table[pos] = data;
+}
+
+function get(key) {
+  return this.table[this.betterHash(key)];
+}
+
+let pnumber = new HasTable();
+let name, number;
+for (let i = 0; i < 3; i++) {
+  console.log("Enter a name (space to quit): ");
+  name = prompt();
+  console.log("Enter a name: ");
+  number = prompt();
+}
+name = "";
+console.log("Name for number (Enter quit to stop): ");
+while (name != "quit") {
+  name = prompt();
+  if (name == "quit") {
+    break;
+  }
+  console.log(name + " s number is " + pnumber.get(name));
+  prompt("Name for number (Enter quit to stop): ");
+}
+
