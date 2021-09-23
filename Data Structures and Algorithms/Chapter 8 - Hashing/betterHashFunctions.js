@@ -193,3 +193,31 @@ function get(key) {
     }
     return undefined;
 }
+
+// Rewriting put() and get() methods using linear probing
+function put(key, value) {
+    let pos = this.betterHash(key);
+    if (this.table[pos] == undefined) {
+        this.table[pos] = key;
+        this.values[pos] = data;
+    } else {
+        while (this.table[pos] != undefined) {
+            pos++;
+        }
+        this.table[pos] = key;
+        this.values[pos] = data;
+    }
+}
+
+function get(key) {
+    let hash = -1;
+    hash = this.betterHash(key);
+    if (hash > -1) {
+        for (let i = hash; this.table[hash] != undefined; i++) {
+            if (this.table[hash] == key) {
+                return this.values[hash];
+            }
+        }
+    }
+    return undefined;
+}
