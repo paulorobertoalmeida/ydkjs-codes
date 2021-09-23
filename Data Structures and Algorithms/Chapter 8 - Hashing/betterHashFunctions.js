@@ -138,4 +138,25 @@ function buildChains() {
   }
 }
 
+// Using separate channing to avoid collisions
+
+var hTable = new HashTable();
+hTable.buildChains();
+this.values = [];
+var someNames = ["David", "Jennifer", "Donnie", "Raymond", "Cynthia", "Mike", "Clayton", "Danny", "Jonathan"];
+for (var i = 0; i < someNames.length; i++) {
+    hTable.add(someNames[i]);
+}
+hTable.showDistro();
+
+// Modifying showDistro()
+
+function showDistro() {
+    let n = 0;
+    for (var i = 0; i < this.table.length; i++) {
+        if (this.table[i][0] != undefined) {
+            console.log(i + ": " + this.table[i]);
+        }
+    }
+}
 
