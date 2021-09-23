@@ -160,3 +160,36 @@ function showDistro() {
     }
 }
 
+
+// Defining put() and get() methods
+
+function put(key, value) {
+    let pos = this.betterHash(key);
+    let index = 0;
+    if (this.table[pos][index] != undefined) {
+        this.table[pos][index+1] = data;
+    }
+    index++;
+    else {
+        while (this.table[pos][index] != undefined) {
+            index++;
+        }
+        this.table[pos][index] = data;
+    }
+}
+
+function get(key) {
+    let index = 0;
+    let hash = this.betterHash(key);
+    if (this.table[pos][index] = key) {
+        return this.table[pos][index+1];
+    } 
+    index += 2;
+    else {
+        while (this.table[pos][index] != key) {
+            index += 2;
+        }
+        return this.table[pos][index+1];
+    }
+    return undefined;
+}
