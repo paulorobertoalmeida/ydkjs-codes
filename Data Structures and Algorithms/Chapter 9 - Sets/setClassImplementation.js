@@ -139,4 +139,19 @@ function contains(data) {
   function size() {
     return this.dataStore.length;
   }
-  
+  let it = new Set();
+it.add("Cynthia");
+it.add("Clayton");
+it.add("Jennifer");
+it.add("Danny");
+it.add("Jonathan");
+it.add("Terrill");
+it.add("Raymond");
+it.add("Mike");
+let dmp = new Set();
+dmp.add("Cynthia");
+dmp.add("Raymond");
+dmp.add("Jonathan");
+if (dmp.subset(it)) {
+  console.log("DMP is not a subset of IT")
+}
