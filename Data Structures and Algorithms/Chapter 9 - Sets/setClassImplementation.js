@@ -60,3 +60,15 @@ removed = "Alisa";
 if (names.remove("Mike")) {
   console.log(remove + " remove.")
 }
+
+// More Set Operations
+
+function contains(data) {
+    if (his.dataStore.indexOf(data) > -1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  
