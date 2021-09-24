@@ -135,3 +135,8 @@ function contains(data) {
     }
     return true;
   }
+
+  function size() {
+    return this.dataStore.length;
+  }
+  
