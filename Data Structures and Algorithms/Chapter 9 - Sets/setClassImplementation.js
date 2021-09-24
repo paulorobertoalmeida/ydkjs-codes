@@ -155,3 +155,14 @@ dmp.add("Jonathan");
 if (dmp.subset(it)) {
   console.log("DMP is not a subset of IT")
 }
+
+
+function difference(set) {
+    let tempSet = new Set();
+    for (let i = 0; i < this.dataStore.length; i++) {
+        if (!set.contains(this.dataStore[i])) {
+            tempSet.add(this.dataStore[i]);
+        }
+    }
+    return tempSet;
+}
