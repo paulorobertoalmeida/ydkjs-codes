@@ -166,3 +166,15 @@ function difference(set) {
     }
     return tempSet;
 }
+
+let cis = new Set();
+let it = new Set();
+cis.add("Clayton");
+cis.add("Jennifer");
+cis.add("Danny");
+cis.add("Jonathan");
+cis.add("Terrill");
+cis.add("Raymond");
+let diff = new Set();
+diff = cis.difference(it);
+console.log("[" + cis.show() + "] difference [" + it.show() + "] -> [" + diff.show + "]" );
