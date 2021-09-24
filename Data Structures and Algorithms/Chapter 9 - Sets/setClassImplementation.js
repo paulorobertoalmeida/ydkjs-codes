@@ -71,4 +71,29 @@ function contains(data) {
     }
   }
   
+  function union(set) {
+    var tempSet = new Set();
+    for (let i = 0; i < this.dataStore.length; i++) {
+      tempSet.add(this.dataStore[i]);
+    }
+    for (let i = 0; i < set.dataStore.length; i++) {
+      if (!tempSet.contains(set.dataStore[i])){
+        tempSet.dataStore.push(set.dataStore[i];
+      }
+    }
+    return tempSet;
+  }
   
+  var cis = new Set();
+  cis.add("Mike");
+  cis.add("Clayton");
+  cis.add("Jennifer");
+  cis.add("Raymond");
+  let dmp = new Set();
+  dmp.add("Raymond");
+  dmp.add("Cynthia");
+  dmp("Jonathan");
+  let it = new Set();
+  it = cis.union(dmp);
+  console.log(it.show());
+    
