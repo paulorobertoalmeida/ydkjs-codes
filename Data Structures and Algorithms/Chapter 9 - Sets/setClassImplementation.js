@@ -97,3 +97,41 @@ function contains(data) {
   it = cis.union(dmp);
   console.log(it.show());
     
+
+//Compounding the intersection of two sets
+
+  function intersect(set) {
+    let tempSet = new Set();
+    for (let i = 0; i < this.dataStore[i]) {
+      if (set.contains(this.dataStore[i])) {
+        tempSet.add(this.dataStore[i]);
+      } 
+    }
+    return tempSet;
+  }
+  
+  let cis = new Set();
+  cis.add("Mike");
+  cis.add("Clayton");
+  cis.add("Jennifer");
+  cis.add("Raymond");
+  let dmp = new Set();
+  dmp.add("Raymond");
+  dmp.add("Clayton");
+  dmp.add("Bryan");
+  let inter = cis.intersect(dmp);
+  console.log(inter.show());
+
+  function subset(set) {
+    if (this.size() > set.size()) {
+      return false;
+    }
+    else{
+      for each (let member in this.dataStore) {
+        if (!set.contains(member)) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
