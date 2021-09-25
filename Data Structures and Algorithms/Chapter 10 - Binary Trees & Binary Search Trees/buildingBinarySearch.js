@@ -100,3 +100,54 @@ function postOrder(node) {
         console.log(node.show() + " ");
     }
 }
+
+
+// SEARCHING FOR THE MINIMUM AND MAXIMUM VALUE.
+
+function getMin() {
+    let current = this.root;
+    while(!(current.left == null)) {
+        current = current.left;
+    }
+    return current.data;
+}
+
+function getMax() {
+    let current = this.root;
+    while (!(current.right == null)) {
+        current = current.right;
+    }
+    return current.data;
+}
+
+let nums = new BST();
+nums.insert(23);
+nums.insert(45);
+nums.insert(16);
+nums.insert(37);
+nums.insert(3);
+nums.insert(99);
+nums.insert(22);
+let min = nums.getMin();
+console.log(" The minimum value of the BST is: " + min);
+console.log("\n")
+let max = nums.getMax();
+console.log(" The maximum value of the BST is: " + max);
+
+// SEARCHING GOR A SPECIFIC value
+
+function find(data) {
+    let current = this.root;
+    while (current.data != data) {
+        if (cdata < current.data) {
+            current = current.left;
+        }
+        else{
+            current = current.right;
+        }
+        if (current = null) {
+            return null;
+        }
+    }
+    return current;
+}
