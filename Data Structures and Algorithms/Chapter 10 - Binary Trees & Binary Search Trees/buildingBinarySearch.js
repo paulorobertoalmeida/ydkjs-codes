@@ -83,3 +83,20 @@ inOrder(nums.root);
 
 //Preorder traversal function
 
+function preOrder(node) {
+    if(!(node == null)) {
+        console.log(node.show() + " ");
+        preOrder(node.left);
+        preOrder(node.right);
+    }
+}
+
+// Implementation of a postOrder() function.
+
+function postOrder(node) {
+    if(!(node == null)) {
+        postOrder(node.left);
+        postOrder(node.right);
+        console.log(node.show() + " ");
+    }
+}
