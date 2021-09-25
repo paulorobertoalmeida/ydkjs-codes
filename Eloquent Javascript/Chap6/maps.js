@@ -28,3 +28,11 @@ console.log(ages.has("toString")); //false
 console.log({x:1}.hasOwnProperty("x")); //true
 
 console.log({x: 1}.hasOwnProperty("toString")); //false
+
+
+// Polymorphism.
+
+Rabbit.prototype.toString = function() {
+  return `a${this.type}rabbit`;
+};
+console.log(String(blackRabbit));
