@@ -75,3 +75,10 @@ function prArray(arr) {
     }
 }
 
+function genArray(lenght) {
+    let arr = [];
+    for (let i = 0; i < lenght; i++) {
+        arr[i] = Math.floor(Math.random() * 101);
+    }
+    return arr;
+}
