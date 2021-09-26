@@ -109,3 +109,20 @@ class MatrixIterator {
     return {value, done: false}
   }
 }
+
+
+Matrix.prototype[Symbol.iterator] = function() {
+  return new MatrixIterator(this)
+}
+
+let matrix = new Matrix(2,2,(x,y) => `value ${x}, ${y}`);
+for (let {x, y, value} of matrix) {
+  console.log(x,y,value);
+} 
+
+/* 
+0 0 'value 0, 0'
+1 0 'value 1, 0'
+0 1 'value 0, 1'
+1 1 'value 1, 1' 
+*/
