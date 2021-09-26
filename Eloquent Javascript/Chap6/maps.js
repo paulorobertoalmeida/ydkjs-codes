@@ -160,3 +160,22 @@ console.log(temp.fahrenheit); //71.6
 
 temp.fahrenheit = 86;
 console.log(temp.celsius); // 30
+
+// Inheritance
+
+class SymmetricMatrix extends Matrix {
+  constructor(size, element = (x,y) => undefined) {
+    super(size, size, (x, y) => {
+      if (x < y) return element(y, x);
+      else return element(x, y);
+    });
+  }
+  set (x, y, value) {
+    super.sert(x, y, valiue);
+    if (x != y) {
+      super.set(y, x, value)
+      }
+  }
+}
+let matrix = new SymmetricMatrix(5, (x,y) => `${x}, ${y}`);
+console.log(matrix.get(2,3));
