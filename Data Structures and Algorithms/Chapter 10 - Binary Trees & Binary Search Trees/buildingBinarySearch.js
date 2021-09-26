@@ -151,3 +151,22 @@ function find(data) {
     }
     return current;
 }
+
+let nums = new BST();
+nums.insert(23);
+nums.insert(45);
+nums.insert(16);
+nums.insert(37);
+nums.insert(3);
+nums.insert(99);
+nums.insert(22);
+inOrder(nums.root);
+console.log("\n");
+console.log("Enter a value to search for: ");
+let value = parseInt(prompt());
+let found = nums.find(value);
+if (found != null) {
+    ("Found " + value + " in the BTS.");
+} else {
+    console.log(value + " value not found in the BST");
+}
