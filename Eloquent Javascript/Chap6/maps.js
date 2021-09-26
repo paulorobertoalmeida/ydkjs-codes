@@ -58,3 +58,12 @@ let toStringObject = {
   [toStringSymbol]() {return "a jute rope"}
 };
 console.log(toStringObject[toStringSymbol]()); //a jute rope
+
+// The Iterator Interface.
+
+let okIterator = "Ok"[Symbol.iterator]();
+console.log(okIterator.next()); //{ value: 'O', done: false }
+
+console.log(okIterator.next()); // { value: 'k', done: false }
+
+console.log(okIterator.next()); //{ value: undefined, done: true }
