@@ -53,3 +53,8 @@ Array.prototype[toStringSymbol] = function() {
 console.log([1,2].toString()); //1,2
 
 console.log([1,2][toStringSymbol]()); //2 cm of blue yarn
+
+let toStringObject = {
+  [toStringSymbol]() {return "a jute rope"}
+};
+console.log(toStringObject[toStringSymbol]()); //a jute rope
