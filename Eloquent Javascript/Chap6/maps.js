@@ -126,3 +126,15 @@ for (let {x, y, value} of matrix) {
 0 1 'value 0, 1'
 1 1 'value 1, 1' 
 */
+
+// Getters, Setters and Statics
+
+let varyingSize = {
+  get size() {
+    return Math.floor(Math.random() * 100);
+  }
+};
+
+console.log(varyingSize.size); //67
+
+console.log(varyingSize.size); //83
