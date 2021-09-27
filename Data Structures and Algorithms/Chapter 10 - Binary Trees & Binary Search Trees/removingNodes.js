@@ -94,3 +94,18 @@ for (let i = 0; i < grades.length; i++) {
         gradedistro.update(g);
     }
 }
+let cont = "y";
+
+while (count == "y") {
+    console.log("\n\nEnter a grade: ");
+    let g = parseInt(prompt());
+    let aGrade = gradedistro.find(g);
+    if (aGrade === null) {
+        console.log("No occurrences of " + g);
+    }
+    else{
+        console.log("Occurrences of " + g + ": "+aGrade.count);
+    }
+    console.log("Look at another grade (y/n)? ");
+    count += prompt();
+}
