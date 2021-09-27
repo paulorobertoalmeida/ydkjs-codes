@@ -178,3 +178,23 @@ cis.add("Raymond");
 let diff = new Set();
 diff = cis.difference(it);
 console.log("[" + cis.show() + "] difference [" + it.show() + "] -> [" + diff.show + "]" );
+
+
+
+function Vertex(label) {
+  this.label = label;
+}
+
+//Building a Graph.
+
+function Graph(v){
+  this.vertices = v;
+  this.edges = 0;
+  this.adj = [];
+  for (let i = 0; i < this.vertices.length; i++) {
+    this.adj[i] = [];
+    this.adj[i].push("");
+  }
+  this.addEdge = addEdge;
+  this.toString = toString;
+}
