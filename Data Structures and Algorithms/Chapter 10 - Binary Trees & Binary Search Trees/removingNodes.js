@@ -82,3 +82,15 @@ function genArray(lenght) {
     }
     return arr;
 }
+
+let grades = genArray(100);
+prArray(grades);
+for (let i = 0; i < grades.length; i++) {
+    let g = grades[i]
+    let grade = gradedistro.find(g);
+    if (grade === null) {
+        gradedistro.insert(g);
+    } else {
+        gradedistro.update(g);
+    }
+}
