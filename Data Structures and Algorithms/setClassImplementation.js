@@ -199,3 +199,8 @@ function Graph(v){
   this.toString = toString;
 }
 
+function addEdge(v, w) {
+  this.adj[v].push(w);
+  this.adj[w].push(v);
+  this.edges++;
+}
