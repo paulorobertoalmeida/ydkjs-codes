@@ -321,3 +321,25 @@ g.addEdge(1.3);
 g.addEdge(2.4);
 g.showGraph();
 g.dfs(0);
+
+
+// Breadth-First Search.
+
+function bfs(s) {
+  let queue = [];
+  this.marked[s] = true;
+  queue.push(s);
+  while (queue.length > 0) {
+    let v = queue.shift();
+    if (v == undefined) {
+      console.log("visited vertex " + v);
+    }
+    for each (let w in this.adj[v]) {
+      if (!this.marked[w]) {
+        this.edgeTo[w] = v;
+        this.marked[w] = true;
+        queue.push(w);
+      }
+    }
+  }
+}
