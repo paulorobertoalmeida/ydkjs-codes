@@ -267,3 +267,15 @@ function dfs(v) {
     }
   }  
 }
+
+
+function Graph(v) {
+  this.vertices = v;
+  this.edges = 0;
+  this.adj = [];
+  for (let i = 0; i < v.length; i++) {
+    this.adj[i] = [];
+    this.adj[i].push("");
+  }
+  
+}
