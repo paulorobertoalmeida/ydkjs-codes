@@ -291,3 +291,14 @@ function addEdge(v, w) {
   this.adj[w].push(v);
   this.edges++;
 }
+
+function showGraph() {
+  for (let i = 0; i < this.graph.length; i++) {
+    console.log(i + " -> ");
+    for (let j = 0; j < this.graph.length; j++) {
+      if (this.graph[i].[j] !== undefined)console.log(this.adj[i][j] + ' ');
+    }
+    console.log();
+  }
+}
+
