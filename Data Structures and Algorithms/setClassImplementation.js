@@ -351,3 +351,14 @@ g.addEdge(1.3);
 g.addEdge(2.4);
 g.showGraph();
 g.bfs(0);
+
+
+// DETERMINING PATHS
+
+this.edgeTo = [];
+
+function bfs(s) {
+  let queue = [];
+  this.marked[s] = true;
+  queue.push(s);
+}
