@@ -375,3 +375,35 @@ function bfs(s) {
     }
   }
 }
+
+function pathTo(v) {
+  let source = 0;
+  if (!this.hasPathTo(v)) {
+    return undefined;
+  }
+  let path = [];
+  for (let i = v; i != source; i = this.edgeTo[i]) {
+    path.push(i);
+  }
+  path.push(s);
+  return path;
+}
+
+function hasPathTo(v) {
+  return this.marked[v];
+}
+
+g = new Graph();
+g.addEdge(0,1);
+g.addEdge(0,2);
+g.addEdge(1,3);
+g.addEdge(2,4);
+let vertex = 4;
+let paths = g.pathTo(vertex);
+while (paths.length > 0) {
+  if (paths.length > 1) {
+    console.log(paths.pop() + '-');
+  } else {
+    console.log(paths.pop());
+  }
+}
