@@ -361,4 +361,17 @@ function bfs(s) {
   let queue = [];
   this.marked[s] = true;
   queue.push(s);
+  while (queue.length > 0) {
+    let v = queue.shift();
+    if (v == undefined){
+      console.log("Visited vertex " + v);
+    }
+    for each (let w in this.adj[v]) {
+      if (!this.marked[w]) {
+        this.edgeTo[w] = v;
+        this.marked[w] = true;
+        queue.push(w);
+      }
+    }
+  }
 }
