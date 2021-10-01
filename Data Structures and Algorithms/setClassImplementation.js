@@ -426,4 +426,19 @@ function toSort() {
       console.log(this.vertexList[stack[i]]);
     }
   }
+  for (let i = 0; i < stack.length; i++) {
+    if (stack[i] != undefined && stack[i] != false) {
+      console.log(this.vertexList[stack[i]]);
+    }
+  }
+}
+
+function topSortHelper(v, visited, stack) {
+  visited[v] = true;
+  for each (let w in this.adj[v]) {
+    if (!visited[w]) {
+      this.topSortHelper(visited[w], visited, stack);
+    }
+  }
+  stack.push(v);
 }
