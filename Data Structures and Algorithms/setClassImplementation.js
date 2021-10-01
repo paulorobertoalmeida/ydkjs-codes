@@ -442,3 +442,14 @@ function topSortHelper(v, visited, stack) {
   }
   stack.push(v);
 }
+
+function Graph(v) {
+  this.vertices = v;
+  this.vertexList = [];
+  this.edges = 0;
+  this.adj = [];
+  for (let i = 0; i < this.vertices; i++) {
+    this.adj[i] = [];
+    this.adj[i].push("");
+  }
+}
