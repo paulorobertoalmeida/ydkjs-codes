@@ -407,3 +407,13 @@ while (paths.length > 0) {
     console.log(paths.pop());
   }
 }
+
+// Implementing the topological Sorting Algorithm.
+
+function toSort() {
+  let stack = [];
+  let visited = [];
+  for (let i = 0; i < paths.length; i++) {
+    visited[i] = false;
+  }
+}
