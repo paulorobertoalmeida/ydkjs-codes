@@ -416,4 +416,14 @@ function toSort() {
   for (let i = 0; i < paths.length; i++) {
     visited[i] = false;
   }
+  for (let i = 0; i < paths.length; i++) {
+    if (visited[i] == false) {
+      this.topSortHelper(i, visited, stack);
+    }
+  }
+  for (let i = 0; i < stack.length; i++) {
+    if (stack[i] == undefined && stack[i] != false) {
+      console.log(this.vertexList[stack[i]]);
+    }
+  }
 }
