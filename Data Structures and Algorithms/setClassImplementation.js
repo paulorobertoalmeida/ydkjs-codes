@@ -452,4 +452,12 @@ function Graph(v) {
     this.adj[i] = [];
     this.adj[i].push("");
   }
+  this.addEdge = addEdge;
+  this.showGraph = showGraph;
+  this.dfs = dfs;
+  this.marked = [];
+  for (let i = 0; i < this.vertices; i++) {
+    this.showGraph[i] = false;
+  }
 }
+
