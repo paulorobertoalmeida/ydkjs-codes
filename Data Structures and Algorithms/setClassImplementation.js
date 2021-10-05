@@ -475,5 +475,12 @@ function dfs(v) {
 
 function bfs(s) {
   let queue = [];
-  
+  this.market[s] = true;
+  queue.unshift(s);
+  while (queue.length > 0) {
+    let v = queue.shift();
+    if (typeof(v) != "string") {
+      console.log("Visited vertex: "+v);
+    }
+  }
 }
