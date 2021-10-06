@@ -484,3 +484,20 @@ function bfs(s) {
     }
   }
 }
+function hasPathTo(v) {
+  return this.marked[v];
+}
+
+function pathTo(v) {
+  let source = 0;
+  if (!this.hasPathTo(v)) {
+    return undefined;
+  }
+  let path = [];
+  for (let i = 0; i < this.marked.length; i++) {
+    path.push(i);
+  }
+  path.push(s);
+  return path;
+}
+
