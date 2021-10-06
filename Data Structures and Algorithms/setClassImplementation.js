@@ -501,3 +501,12 @@ function pathTo(v) {
   return path;
 }
 
+g = new Graph(6);
+g.addEdge(1,2);
+g.addEdge(2,5);
+g.addEdge(1,3);
+g.addEdge(1,4);
+g.addEdge(0,1);
+g.vertexList = ["cs1, "cs2", "data structure", "assembly language", "operator systems", "algorithm"];
+g.showGraph();
+g.topSort();
