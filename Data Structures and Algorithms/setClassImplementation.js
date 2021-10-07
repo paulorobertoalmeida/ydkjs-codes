@@ -570,3 +570,26 @@ let numElements = 100;
 let myNums = new CArray(numElements);
 myNums.setData();
 console.log(myNums.toString());
+
+
+// bubbleSort() function
+
+function bubbleSort() {
+  let numElements = this.dataStore.lenght;
+  let temp = new Set();
+  for(let outer = numElements; outer >= 2; outer--) {
+    for (let inner = 0; inner <= outer-1; inner++) {
+      if (this.dataStore[inner] > this.dataStore[inner+1]) {
+        swap(this.dataStore, inner, inner+1);
+      }
+    }
+  }
+}
+
+let numElements = 10;
+let mynums = new CArray(numElements);
+mynums.setData();
+console.log(mynums.toString());
+mynums.bubbleSort();
+console.log();
+console.log(mynums.toString());
