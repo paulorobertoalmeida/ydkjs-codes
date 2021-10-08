@@ -593,3 +593,15 @@ console.log(mynums.toString());
 mynums.bubbleSort();
 console.log();
 console.log(mynums.toString());
+
+function bubbleSort() {
+  let temp;
+  for (let outer = numElements; outer >= 2; outer--) {
+    for (let inner = 0; inner <= outer-1; inner++) {
+      if (this.data[inner] > this.dataStore[inner+1]) {
+        swap(this.dataStore, inner, inner+1);
+      }
+    }
+    console.log(this.toString);
+  }
+}
