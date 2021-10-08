@@ -594,7 +594,10 @@ mynums.bubbleSort();
 console.log();
 console.log(mynums.toString());
 
+<<<<<<< HEAD:Data Structures and Algorithms/Chapter 12 - Sorting Algorithm/setClassImplementation.js
 
+=======
+>>>>>>> 93d64337ed7a11fbd73c3cb3f27a83a2c8e81b7d:Data Structures and Algorithms/setClassImplementation.js
 function bubbleSort() {
   let temp;
   for (let outer = numElements; outer >= 2; outer--) {
@@ -605,4 +608,8 @@ function bubbleSort() {
     }
     console.log(this.toString);
   }
+<<<<<<< HEAD:Data Structures and Algorithms/Chapter 12 - Sorting Algorithm/setClassImplementation.js
 }
+=======
+}
+>>>>>>> 93d64337ed7a11fbd73c3cb3f27a83a2c8e81b7d:Data Structures and Algorithms/setClassImplementation.js
