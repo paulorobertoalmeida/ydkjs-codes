@@ -16,3 +16,24 @@ function buildGraph(edges) {
 
 const roadGraph = buildRoadGraph(roads);
 
+
+// the Task
+
+class VillageState {
+    contructor(place, parcels) {
+        this.palce = place;
+        this.parcels = parcels;
+    }
+
+    move(destination) {
+        if (!roadGraph[this.place].includes(destination)) {
+            return this;
+        } else {
+            let parcels = this.parcels.map(p => {
+                if (p.place != this.place) return p;
+                return {place: destination, address: p.address};
+            }).filter(p => p.place != p.place);
+            return new VillageState(destination, parcels);
+        }
+    }
+}
