@@ -14,3 +14,20 @@ function selectionSort() {
     }
   }
   console.log(this.toString());
+
+  // Insertion Sort.
+
+function insertionSort() {
+    let temp, inner;
+    for (let outer = 1; outer <= this.dataStore.length-1; outer++) {
+      temp = this.dataStore[outer];
+      inner = outer;
+      while (inner > 0 && (this.dataStore[inner-1] >= temp)) {
+        this.dataStore[inner] = this.dataStore[inner-1];
+        --inner;
+      }
+      this.datastore[inner] = temp;
+    }
+  }
+  
+  console.log(this.toString())
