@@ -44,4 +44,25 @@ for (let i = 1; i < 100; i++) {
 }
 let stop = new Date().getTime();
 let elapsed = stop - start;
-console.log("the elapsed time was: "+ elapsed + "milliseconds.");
+console.log("the elapsed time was: "+ elapsed + "milliseconds."); // the elapsed time was: 6milliseconds.
+
+// Timming comparisons of the sorting functions with 100 array elements
+
+let numElements = 100;
+let nums = new CArray(numElements);
+nums.setData();
+let start = new Date().getTime();
+nums.bubbleSort();
+let stop = new Date().getTime();
+let elapsed = stop - start;
+console.log("elapsed time for the bubbleSort on " + numElements + " elements is: "+ elapsed + " milliseconds.");
+start = new Date().getTime();
+nums.selectionSort();
+stop = new Date.getTime();
+elapsed = stop - start;
+console.log("elapsed time for the selection sort on " + numElements + " elements is: "+ elapsed + " milliseconds.");
+start = new Date().getTime();
+nums.insertionSort();
+stop = new Date().getTime();
+elapsed = stop -start;
+console.log("elapsed time for the insertion sort on " + numElements + " elements is: "+ elapsed + " milliseconds.");
