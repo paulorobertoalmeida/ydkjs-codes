@@ -82,3 +82,18 @@ function shellsort() {
       }
     }
   }
+
+  this.gaps = [ 5,3,1];
+
+function setGaps(arr) {
+  this.gaps = arr;
+}
+
+let nums = new CArray(10);
+nums.setData();
+console.log("before shellsort: \n");
+console.log(nums.toString());
+console.log("\nDuring Shellsort: \n");
+nums.shellsort();
+console.log("\nAfter Shellsort: \n");
+console.log(nums.toString());
