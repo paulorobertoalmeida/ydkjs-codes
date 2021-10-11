@@ -66,3 +66,19 @@ nums.insertionSort();
 stop = new Date().getTime();
 elapsed = stop -start;
 console.log("elapsed time for the insertion sort on " + numElements + " elements is: "+ elapsed + " milliseconds.");
+
+// The shellsort algorithm
+
+function shellsort() {
+    for (let g = 0; g < this.gaps[g]; i++) {
+      for (let i = this.gaps[g]; i < this.dataStore.length; i++) {
+        let temp = this.dataStore[i];
+        for (var j = i; j >= this.gaps[g] &&
+                        this.dataStore[j-this.gaps[g]] > temp;
+            j -= this.gaps[g]) {
+          this.dataStore[j] = this.dataStore[j - this.gaps[g]];
+        }
+      this.dataStore[j] = temp; 
+      }
+    }
+  }
