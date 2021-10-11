@@ -30,4 +30,18 @@ function insertionSort() {
     }
   }
   
-  console.log(this.toString())
+  console.log(this.toString());
+
+// Timming comparisons of the Basic Sorting Algorithm(BSA)
+
+
+let start = new Date().getTime();
+console.log(start); //1633944790307
+
+let start = new Date().getTime();
+for (let i = 1; i < 100; i++) {
+  console.log(i);
+}
+let stop = new Date().getTime();
+let elapsed = stop - start;
+console.log("the elapsed time was: "+ elapsed + "milliseconds.");
