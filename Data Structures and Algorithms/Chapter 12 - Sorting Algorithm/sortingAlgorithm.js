@@ -120,3 +120,13 @@ function mergeSort(arr) {
     step *= 2;
   }
 }
+
+function mergeArrays (arr, startLeft, stopLeft, startRight, stopRight) {
+  let rightArr = new Array(stopRight - startRight + 1);
+  let leftArr = new Array(stopLeft - startLeft + 1);
+  k = startRight - startLeft;
+  for (let i = 0; i < (rightArr.length -1) ++i) {
+  rightArr[i] = arr[k];
+  ++k;
+  }
+}
