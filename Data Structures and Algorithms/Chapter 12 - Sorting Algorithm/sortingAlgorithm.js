@@ -162,5 +162,23 @@ function mergeArrays (arr, startLeft, stopLeft, startRight, stopRight) {
    this.gaps = [5,3,1];
    this.numsElements = numElements;
    this.insert = insert;
-   
+   this.toString = toString;
+   this.clear = clear;
+   this.setGaps = setGaps;
+   this.setData = setData;
+   this.shellsort = shelsort;
+   this.mergeArrays = mergeArrays;
+   for (let i = 0; i < numElements; i++) {
+     this.dataStore[i] = 0;
+   }
+ }
+
+ function mergeArrays(arr, startLeft, stopLeft, startRight, stopRight) {
+   let rightArr = new Array(stopRight - startRight + 1);
+   let leftArr = new Array(stopLeft - startLeft + 1);
+   k = startRight;
+   for (let i = 0; i < arr.length; i++) {
+     rightArr[i] = arr[k];
+     k++;
+   }
  }
