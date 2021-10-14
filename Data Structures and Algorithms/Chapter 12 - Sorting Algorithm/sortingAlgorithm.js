@@ -156,4 +156,11 @@ function mergeArrays (arr, startLeft, stopLeft, startRight, stopRight) {
 
   // Mergesort.
 
-  
+ function CArray(arr) {
+   this.dataStore = [];
+   this.pos = 0;
+   this.gaps = [5,3,1];
+   this.numsElements = numElements;
+   this.insert = insert;
+   
+ }
