@@ -97,3 +97,13 @@ console.log("\nDuring Shellsort: \n");
 nums.shellsort();
 console.log("\nAfter Shellsort: \n");
 console.log(nums.toString());
+
+// Merge Sort Javascript Implementations
+
+function mergeSort(arr) {
+  if (arr.length < 2) {
+    return;
+  }
+  let step = 1;
+  let left, right;
+}
