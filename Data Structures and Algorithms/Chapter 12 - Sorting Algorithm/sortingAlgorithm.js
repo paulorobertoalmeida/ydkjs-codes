@@ -129,4 +129,31 @@ function mergeArrays (arr, startLeft, stopLeft, startRight, stopRight) {
   rightArr[i] = arr[k];
   ++k;
   }
-}
+
+  rightArr[rightArr.length - 1] = Infinity; // a sentinel value.
+  leftArr[leftArr.length - 1] = Infinity; // a sentinel value.
+  let m = 0;
+  let n = 0;
+  for (let k = startLeft; k < stopRight; k++) {
+    if (leftArr[m] <= rightArr[n]) {
+      arr[k] = leftArr[m];
+      m++;
+    }
+    else {
+      arr[k] = rightArr[n];
+      n++;
+    }
+  }
+  console.log("left array - ", leftArr);
+  console.log("right array - ", rightArr);
+
+  let nums = [6,10,1,9,4,8,7,3,5];
+  console.log(nums);
+  console.log();
+  mergeSort(nums);
+  console.log();
+  console.log(nums);
+
+  // Mergesort.
+
+  
