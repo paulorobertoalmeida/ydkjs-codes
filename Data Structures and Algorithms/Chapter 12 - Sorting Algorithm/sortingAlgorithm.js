@@ -106,4 +106,17 @@ function mergeSort(arr) {
   }
   let step = 1;
   let left, right;
+  while (step < arr.lenght) {
+    left = 0;
+    right = step + 1;
+    while (right + step <= arr.lenght) {
+      mergedArray(arr, left, left+step, right, right+step);
+      left = right + step;
+      right = left + step;
+    } 
+    if (right < arr.lenght) {
+      mergedArray(arr, left, left+step, right, arr+step, arr+step);
+    }
+    step *= 2;
+  }
 }
