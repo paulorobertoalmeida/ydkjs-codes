@@ -37,3 +37,26 @@ else {
 }
 console-log();
 dispArr(nums);
+
+function seqSearch(arr, data) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == data) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+let nums = [];
+for (let i = 0; i < 100; i++) {
+  nums[i] = Math.floor(Math.random() * 101);
+}
+console.log();
+let num = prompt();
+if (position > -1) {
+  console.log(num + " is in the array at position " + position);
+} else {
+  console.log(num + " is not in the arrray.");
+}
+console.log();
+dispArr(nums);
