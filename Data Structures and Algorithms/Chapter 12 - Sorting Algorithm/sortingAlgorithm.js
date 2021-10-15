@@ -275,3 +275,5 @@ function mergeArrays (arr, startLeft, stopLeft, startRight, stopRight) {
  console.log(a);
  console.log();
  console.log(qSort(a));
+
+ 
