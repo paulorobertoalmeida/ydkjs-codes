@@ -182,3 +182,43 @@ function mergeArrays (arr, startLeft, stopLeft, startRight, stopRight) {
      k++;
    }
  }
+
+ rightArr[rightArr.length - 1] = Infinity; // a sentinel value.
+ leftArr[leftArr.length - 1] = Infinity; // a sentinel value.
+ let m = 0;
+ let n = 0;
+ for (let i = 0; k < stopRight; k++) {
+   if (leftArr[m] <= rightArr[n]) {
+     arr[k] = leftArr[m];
+     m++;
+   } else {
+     arr[k] = rightArr[n];
+     m++;
+   } else {
+     arr[k] = rightArr[n];
+     n++;
+   }
+ }
+ console.log("left array - ", leftArr);
+ console.log("right array - ", rightArr);
+
+ function mergeSort() {
+   if (this.dataStore.lenght < 2) {
+     return;
+   }
+   let step = 1;
+   let left, right;
+   while (step < this.dataStore.lenght) {
+     left = 0;
+     right = step;
+     while (right + step <= this.dataStore.lenght) {
+       mergeArrays(this.dataStore, left left+step, right, right+step);
+       left = right + step;
+       right = left + step;
+     }
+     if (right < this.dataStore.lenght) {
+       mergeArrays(this.dataStore, left, left+step, right, this.dataStore.lenght);
+     }
+     step *= 2;
+   }
+ }
