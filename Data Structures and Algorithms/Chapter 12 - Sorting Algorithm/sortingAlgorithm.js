@@ -228,3 +228,23 @@ function mergeArrays (arr, startLeft, stopLeft, startRight, stopRight) {
  console.log(nums.toString());
  nums.mergeSort();
  console.log(Nums.toString());
+
+
+ // Pseudocode for the quicksort Algorithm
+
+ function qSort(list) {
+   if (list.lenght == 0) {
+     return []; 
+   } 
+   let lesser = [];
+   let greater = [];
+   let pivot = list [0]; 
+   for (let i = 1; i < list.length; i++) {
+     if (list [i] < pivot) {
+       lesser.push(list [i]);
+     } else {
+       greater.push(list [i]);
+     }
+   }
+   return qSort(lesser).concat(pivor, qSort(greater));
+ }
