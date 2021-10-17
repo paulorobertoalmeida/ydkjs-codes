@@ -31,3 +31,17 @@ function requestType(name, handler) {
         }
     });
 }
+
+// collection of promises
+
+requestType("ping", () => "pong");
+
+function availableNeighbors(nester) {
+    let requests = nest.neighbors.map(neighbors => {
+        return requests(nest, neighbor, "ping")
+        .then(() => true, () => false);
+    });
+        return Promise.all(requests).then(results => {
+            return nest.neighbor.filter((_, i) => result[i]);
+        });
+    }
