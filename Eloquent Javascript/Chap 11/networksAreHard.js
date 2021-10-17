@@ -18,3 +18,16 @@ class Timeout extends Error {
         });
     }
 }
+
+
+function requestType(name, handler) {
+    defineRequest(name, (nest, content, source, callback) => {
+        try {
+            Promise.resolve(handler(nest, content, source))
+            .then(response => callback(null, response),
+                failure => callback(failure));
+        } catch (exception) {
+            callback(exception);
+        }
+    });
+}
