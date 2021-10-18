@@ -220,4 +220,19 @@ function findMin(arr) {
     if (this.dataStore.length < 2) {
       return;
     }
-  }
+      let step = 1;
+      let left, right;
+      while (step < this.dataStore.length) {
+        left = 0;
+        right = step;
+        while (right + step <= this.dataStore.length) {
+          mergeArrays(this.dataStore, left, left+step, right, right+step);
+          left = right + step;
+          right = left + step;
+        }
+        if (right < this.dataStore.length) {
+          mergeArrays(this.dataStore, left, left+step, right, this.dataStore.length);
+        }
+        step *= 2;
+      }
+    }
