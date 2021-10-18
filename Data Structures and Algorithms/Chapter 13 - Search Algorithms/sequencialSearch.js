@@ -97,3 +97,13 @@ function findMin(arr) {
   nums.shellsort1();
   console.log("\n After Shellsort1: \n");
   console.log(nums.toString());
+
+  // Comparing shellsort() algorithms.
+
+  let nums = new CArray(10000);
+  let nums.setData();
+  let start = new Date().getTime();
+  nums.shellsort();
+  let stop = new Date().getTime();
+  let elapsed = stop - start;
+  console.log("Shellsort with dynamic gap sequence: " + elapsed + " ms. "); 
