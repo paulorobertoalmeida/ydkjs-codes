@@ -185,3 +185,39 @@ function findMin(arr) {
       this.dataStore[i] = 0;
     }
   }
+
+  function mergeArrays(arr, startLeft, stopLeft, startRight, stopRight) {
+    let rightArr = new Array(stopRight - startRight + 1);
+    let leftArr = new Array(stopLeft - startLeft + 1);
+    k = startRight;
+    for (let i = 0; i < (rightArr.length - 1); i++) {
+      rightArr[i] = arr[k];
+      k++;
+    }
+    k = stopLeft;
+    for (let i = 0; i < (leftArr.length - 1); i++) {
+      leftArr[i] = arr[k];
+      k++;
+    }
+    rightArr[rightArr.length - 1] = Infinity;
+    leftArr[leftArr.length - 1] = Infinity;
+    let m = 0;
+    let n = 0;
+    for (var k = 0; k < this.table.length; k++) {
+      if (leftArr[m] <= rightArr[n]) {
+        arr[k] = leftArr[m];
+        m++;
+      } else {
+        arr[k] = rightArr[n];
+        n++;
+      }
+    }
+    console.log("left array - ", leftArr);
+    console.log("right array - ", rightArr);
+  }
+
+  function mergeSort() {
+    if (this.dataStore.length < 2) {
+      return;
+    }
+  }
