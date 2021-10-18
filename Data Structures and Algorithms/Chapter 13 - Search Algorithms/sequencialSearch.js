@@ -139,4 +139,31 @@ function findMin(arr) {
       rightArr[i] = arr[k];
       k++;
     }
+    k = startLeft;
+    for (let i = 0; i < (leftArr.length - 1); i++) {
+      leftArr[i] = arr[k];
+      k++;
+    }
+    rightArr[rightArr.length - 1] = Infinity;
+    leftArr[leftArr.length -1] = Infinity;
+    let m = 0;
+    let n = 0;
+    for (let k = startLeft; k < stopRight; k++) {
+      if (leftArr[m] <= rightArr[n]) {
+        arr[k] = leftArr[m];
+        m++;
+      } else {
+        arr[k] = rightArr[n];
+        n++;
+      }
+    } 
+    console.log("left array - ", leftArr);
+    console.log("right array - ", rightArr);
   }
+
+  let nums = [6, 10, 1, 9, 4, 8, 2, 7, 3, 5];
+  console.log(nums);
+  console.log();
+  mergeSort(nums);
+  console.log();
+  console.log(nums);
