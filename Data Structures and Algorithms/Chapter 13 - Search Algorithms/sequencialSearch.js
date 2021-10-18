@@ -90,4 +90,10 @@ function findMin(arr) {
     }
   }
 
-  
+  let nums = new CArray(100);
+  nums.setData();
+  console.log("Before Shellsort1: \n");
+  console.log(nums.toString());
+  nums.shellsort1();
+  console.log("\n After Shellsort1: \n");
+  console.log(nums.toString());
