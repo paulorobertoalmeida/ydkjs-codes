@@ -107,3 +107,17 @@ function findMin(arr) {
   let stop = new Date().getTime();
   let elapsed = stop - start;
   console.log("Shellsort with dynamic gap sequence: " + elapsed + " ms. "); 
+
+  // A bottom-up Mergesort Javascript implementation.
+
+  function mergeSort(arr) {
+    if (arr.length < 2) {
+      return;
+    }
+    let step = 1;
+    let left, right;
+    while (step < arr.length) {
+      left = 0;
+      right= step ;
+    }
+  }
