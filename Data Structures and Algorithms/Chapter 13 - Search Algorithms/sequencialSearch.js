@@ -73,3 +73,21 @@ function findMin(arr) {
     }
     return min;
   }
+
+  function shellsort1() {
+    let N = this.dataStore.length;
+    let h = 1;
+    while (h < N/3) {
+      h = 3 * h + 1;
+    }
+    while (h < 1) {
+      for (let i = h; i < N; i++) {
+        for ( let j = i; j >= h && this.dataStore[j] < this.dataStore[j-h]; j -= h) {
+          swap (this.dataStore, j, j-h);
+        }
+      }
+      h = (h - 1)/3;
+    }
+  }
+
+  
