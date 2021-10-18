@@ -167,3 +167,21 @@ function findMin(arr) {
   mergeSort(nums);
   console.log();
   console.log(nums);
+
+  // Mergesort added to the CArray class.
+
+  function CArray(numElements) {
+    this.dataStore = [];
+    this.pos = 0;
+    this.gaps = [5, 3, 1];
+    this.numElements = numElements;
+    this.insert = insert;
+    this.toString = toString;
+    this.clear = clear;
+    this.setData = setData;
+    this.setGaps = setGaps;
+    this.mergeArrays = mergeArrays;
+    for (let i = 0; i < numElements; i++) {
+      this.dataStore[i] = 0;
+    }
+  }
