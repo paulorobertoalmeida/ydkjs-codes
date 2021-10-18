@@ -118,6 +118,25 @@ function findMin(arr) {
     let left, right;
     while (step < arr.length) {
       left = 0;
-      right= step ;
+      right= step;
+      while (right + step <= arr.length) {
+        mergedArrays (arr, left, left+step, right, right+step);
+        left = right + step;
+        right = left + step;
+      }
+      if (right < arr.length) {
+        mergedArrays(arr, left, left+step, right, right+step);
+      }
+      step *= 2;
+    }
+  }
+
+  function mergeArrays(arr, startLeft, StopRight, starttRight, stopRight) {
+    let rightArr = new Array(stopRight - startRight + 1);
+    let leftArr = new Array(stopLeft - startLeft + 1);
+    k = starttRight;
+    for (let i = 0; i < (rightArr.length - 1); i++) {
+      rightArr[i] = arr[k];
+      k++;
     }
   }
