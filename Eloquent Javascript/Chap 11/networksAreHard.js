@@ -63,3 +63,7 @@ function availableNeighbors(nester) {
 
     let link = document.body.getElementsByTagName("a")[0];
     console.log(link.href);
+
+    let arrayish = {0: "one", 1: "two", length: 2};
+    let array = Array.from(arrayish);
+    console.log(array.map(s => s.toUpperCase()));
