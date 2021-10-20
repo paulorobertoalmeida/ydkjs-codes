@@ -49,3 +49,10 @@ console.log(next.place);
 console.log(next.parcels);
 
 console.log(first.place);
+
+// Persistet Data
+
+let object = Object.freeze({value: 5});
+object.value = 10;
+console.log(object.value);
+// 5
