@@ -93,3 +93,5 @@ VillageState.random = function(parcelCount = 5) {
     }
     return new VillageState("POst Office ", parcels);
 };
+
+runRobot(VillageState.random(), randomRobot);
