@@ -139,3 +139,12 @@ for(;;) {
         console.log("Not a valid direction. Try again.");
     }
 }
+
+class InputError extends Error {}
+
+function promptDirection(direction) {
+    let result = prompt(question);
+    if (result.toLowerCase() == "left") return "L";
+    if (result.toLowerCase() == "right") return "R";
+    throw new InputError("Invalid direction: " + result);
+}
