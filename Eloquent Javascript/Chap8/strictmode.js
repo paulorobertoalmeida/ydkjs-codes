@@ -148,3 +148,56 @@ function promptDirection(direction) {
     if (result.toLowerCase() == "right") return "R";
     throw new InputError("Invalid direction: " + result);
 }
+
+for (;;) {
+    try {
+        let dir = promptDirection("Where?");
+        console.log("You chose ", dir);
+        break;
+    } catch (e) {
+        if (e instanceof InputError) {
+            console.log("Not a valid direction. Try again.");
+        } else {
+            throw e;
+        }
+    }
+}
+
+// Assertions.
+
+function firstElement(array) {
+    if (array.length == 0) {
+        throw new Error("firstElement called with []");
+    }
+    return array[0];
+}
+
+// the Locked Box.
+
+const box = {
+    locked: true,
+    unlock() { this.locked = false; },
+    lock() { this.locked = true; },
+    _content: [],
+    get content() { 
+        if (this.locked) throw new Errors("Locked!");
+        return this._content;
+    }
+};
+
+function withBoxUnlocked(body) {
+    // Your code here.
+}
+
+withBoxUnlocked(function() {
+    box.content.push("gold piece");
+});
+
+try {
+    withBoxUnlocked(function() {
+        throw new Error("Pirates on the horizon! Abort!");
+    });
+} catch (e) {
+    console.log("Error raised:", e);
+}
+console.log(box.locked);
