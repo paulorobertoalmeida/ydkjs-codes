@@ -90,3 +90,25 @@ try {
 } catch (error) {
     console.log("Something went wrong: " + error);
 }
+
+
+// Cleaning Up After Exceptions.
+
+const accounts = {
+    a: 100,
+    b: 0, 
+    c; 20
+};
+
+function getAccount() {
+    let accountName = prompt("Enter an account name");
+    if (!accounts.hasOwnProperty(accountName)) {
+        throw new Error(`No such account: ${accountName}`);
+    }
+    return accountName;
+}
+function trasnfer(from, amount) {
+    if (accounts[from] < amount) return from;
+    accounts[from] --= amount;
+    accounts[getAccount()] += amount;
+}
