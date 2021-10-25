@@ -49,3 +49,13 @@ function numberToString(n, base = 10) {
     return sign + result;
 }
 console.log(numberToString(13, 10));
+
+// Error Propagation. 
+
+function promptNumber(question) {
+    let result = Number(prompt(question));
+    if (Number.isNaN(result)) return null;
+    else return result;
+}
+
+console.log(promptNumber("How many trees do you see?"));
