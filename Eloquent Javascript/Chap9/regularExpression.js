@@ -16,3 +16,9 @@ conosole.log(/abc/.test("abcde"));
 console.log(/[0123456789]/.test("in 1992"));
 
 console.log(/[0-9]/.test("in 1992"));
+
+// Sets of Characters.
+
+console.log(/[0123456789]/.test("in 1992"));
+
+console.log(/[0-9]/.test("in 1992"));
