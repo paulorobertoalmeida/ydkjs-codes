@@ -27,3 +27,8 @@ let dataTime = /\d\d-\...;
 console.log(dataTime.test("01-30-2003 15:20"));
 
 console.log(dataTime.test("30-jan-2003 15:20"));
+
+let notBinary = /[^01]/;
+console.log(notBinary.test("11..."));
+
+console.log(notBinary.test("1100..."));
