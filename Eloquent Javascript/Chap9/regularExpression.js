@@ -25,3 +25,5 @@ console.log(/[0-9]/.test("in 1992"));
 
 let dataTime = /\d\d-\...;
 console.log(dataTime.test("01-30-2003 15:20"));
+
+console.log(dataTime.test("30-jan-2003 15:20"));
