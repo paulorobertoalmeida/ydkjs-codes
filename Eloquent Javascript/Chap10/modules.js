@@ -59,3 +59,11 @@ function require(name) {
 const {parse} = require("ini");
 
 console.log(parse("x = 10\ny = 20"));
+
+
+// ECMAScript Modules.
+
+import ordinal from "ordinal";
+import {days, months} from "date-names";
+
+export function formarDate(date, format) {/* .. */}
