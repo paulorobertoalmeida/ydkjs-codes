@@ -10,3 +10,17 @@ const weekDay = function(){
 
 console.log(weekDay.name(weekDay.number("Sunday")));
 
+// Evaluation Data as Code.
+
+const x = 1;
+function evalAndReturnX(code) {
+    eval(code);
+    return x;
+}
+
+console.log(evalAndReturnX("var x = 2"));
+console.log(x);
+
+let plusOne = Function("n", "return n + 1");
+console.log(plusOne(4));
+
