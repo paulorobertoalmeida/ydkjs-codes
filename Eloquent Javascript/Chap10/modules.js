@@ -55,3 +55,7 @@ function require(name) {
     }
     return require.cache[name].exports;
 }
+
+const {parse} = require("ini");
+
+console.log(parse("x = 10\ny = 20"));
