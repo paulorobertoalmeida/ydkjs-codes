@@ -70,6 +70,19 @@ export function formarDate(date, format) {/* .. */}
 
 export default ["Winter", "Spring", "Summer", "Authumn"];
 
+////
 import {days as dayNames} from "date-names";
 console.log(dayNames.length);
+////
 
+const {find_path} = require("dijktrajs");
+
+let graph = {};
+for (let node of Object.keys(roadGraph)) {
+    let edges = graph[node] = {};
+    for (let dest of roadGraph[node]) {
+        edges[dest] = 1;
+    }
+}
+
+console.log(find_path(graph, "Post Office", "Cabin"));
