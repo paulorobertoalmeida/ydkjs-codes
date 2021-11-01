@@ -67,3 +67,7 @@ import ordinal from "ordinal";
 import {days, months} from "date-names";
 
 export function formarDate(date, format) {/* .. */}
+
+export default ["Winter", "Spring", "Summer", "Authumn"];
+
+import {days as }
