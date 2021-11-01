@@ -10,3 +10,7 @@ bigOak.readStorage("food caches", caches => {
         console.log(info);
     });
 });
+
+////////////////////////////////
+bigOak.send("Cow Pasture", "note", "Let's caw loudly at 7PM",
+    () => console.log("note delivered"));
