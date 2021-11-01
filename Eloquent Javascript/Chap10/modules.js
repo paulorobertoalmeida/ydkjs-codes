@@ -70,4 +70,6 @@ export function formarDate(date, format) {/* .. */}
 
 export default ["Winter", "Spring", "Summer", "Authumn"];
 
-import {days as }
+import {days as dayNames} from "date-names";
+console.log(dayNames.length);
+
