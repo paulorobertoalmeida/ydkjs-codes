@@ -34,3 +34,13 @@ function storage(nest,name) {
 }
 
 storage(bigOak, "enemies").then(value => console.log("Got", value));
+
+// Failure
+
+new Promise((_, reject) => reject(new Error("Fail")))
+.then(value => console.log("Handler 1"))
+.catch(reason => {
+    console.log("Caught failure " + reason);
+    result "nothing";
+})
+.then(value => console.log("Handler 2", value));
