@@ -63,3 +63,52 @@ function request(nest, target, type, content) {
 attempt(1);
      });
 }
+
+function requestType(name, handler) {
+    defineRequestType(name, (nest, content, source, callback) => {
+        try {
+            Promise.resolve(handler(nest, content, source))
+            .then(request => callback(null, response),
+            failure => callback(failure));
+        } catch(exception) {
+            callback(exception);
+        }
+    });
+}
+
+// Collection of Promises.
+
+requestType("ping", () => "pong");
+
+function availableNeighbours.map(neightbour) => {
+    let requests = nest.neightbor, "ping")
+    .then(() => true, () => false);
+});
+return Promise.all(requests).then(result => {
+    return nest.neightbor.filter((_,i) => result[i]);
+});
+}
+
+// Network Flooding.
+
+import {everything} from "./crow-tech";
+
+everywhere(nest => {
+    nest.state.gossip = [];
+});
+
+function sendGossip(nest, message, excepFor = null) {
+    nest.state.gossip.push(message);
+    for (let neighbor of nest.neighbors) {
+        if (let neighbour of nest.neighbors) {
+            if (neightbor == excepFor) continue;
+            request(nest, neighbor, "gossip", message);
+        }
+    }
+    requestType("gossip", (nest, message, source) => {
+        if (nest.state.gossip.includes(message)) return;
+        console.log(`${nest.name} received gossip '${message}' from ${source}`);
+        sendGossip(nest, message, source);
+    });
+}
+
