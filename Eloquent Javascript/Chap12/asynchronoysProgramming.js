@@ -14,3 +14,11 @@ bigOak.readStorage("food caches", caches => {
 ////////////////////////////////
 bigOak.send("Cow Pasture", "note", "Let's caw loudly at 7PM",
     () => console.log("note delivered"));
+
+////
+import {defineRequestType} from "./crow-tech";
+defineRequestType("note", (nest, content source, done) => {
+    conosle.log(`${nest.name}received note: ${content}`);
+    content();
+});
+
