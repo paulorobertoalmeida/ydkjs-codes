@@ -44,3 +44,22 @@ new Promise((_, reject) => reject(new Error("Fail")))
     result "nothing";
 })
 .then(value => console.log("Handler 2", value));
+
+// Network Are Hard.
+
+class Timeout extends Error {}
+
+function request(nest, target, type, content) {
+    return new Promise((resolve, reject) => {
+        done = true;if (failed) reject(failed);
+        else resolve(value);
+    });
+    setTimeout(() => {
+        if (done) return;
+        else if(n < 3) attempt(n + 1);
+        else reject(new Timeout("Timed out", target, type, content));
+    },250);
+}
+attempt(1);
+     });
+}
