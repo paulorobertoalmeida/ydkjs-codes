@@ -112,3 +112,8 @@ function sendGossip(nest, message, excepFor = null) {
     });
 }
 
+// Message Routing.
+
+requestType("connection", (nest, {name,neighbor}, source) => {
+    let connection = nest.state.connections;
+if (JSON.stringify(connection.get(name)))})
