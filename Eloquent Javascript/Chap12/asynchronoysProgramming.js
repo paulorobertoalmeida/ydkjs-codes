@@ -119,4 +119,11 @@ requestType("connection", (nest, {name,neighbor}, source) => {
 if (JSON.stringify(connection.get(name)) ===
         JSON.stringify(neighbors)) return;
     connections.set(name, neighbors);
-broadcastConnection(nest, name, source)})
+broadcastConnections(nest, name, source)
+});
+
+function broadcastConnections(nest, exceptFor = null) {
+    for (let neighbor of nest.neighbors) {
+        if
+    }
+}
