@@ -147,8 +147,9 @@ function findRoute(from, to, connections) {
         for ( let next of connections.get(at) || [] ) {
             if (next == to) return via;
             if (!work.some(w => w.at == next)) {
-                
+                work.push({at: next, via: via || next});
             }
         }
     }
+    return null;
 }
