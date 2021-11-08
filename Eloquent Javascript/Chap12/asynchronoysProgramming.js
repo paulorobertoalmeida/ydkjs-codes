@@ -137,3 +137,9 @@ everywhere(nest => {
     nest.state.connections.set(nest.name, nest.neighbors);
     broadcastConnections(nest, nest.name); 
 });
+
+////////////
+
+function findRoute(from, to, connections) {
+    let work = [{at: from, via: null}];
+}
