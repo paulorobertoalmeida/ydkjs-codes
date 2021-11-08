@@ -153,3 +153,13 @@ function findRoute(from, to, connections) {
     }
     return null;
 }
+
+function routeRequest(nest, target, type, content) {
+    if (nest. neighbors.includes(target)) {
+        return request(nest, target, type, content);
+    } else {
+        let via = findRoute(nest.name, target, nest.state.connections);
+        if (!via) throw new Error(`No route to ${target}`);
+        return request
+    }
+}
