@@ -142,4 +142,10 @@ everywhere(nest => {
 
 function findRoute(from, to, connections) {
     let work = [{at: from, via: null}];
+    for (let i = 0; i < work.length; i++) {
+        let {at, via} = work[i];
+        for ( let next of connections.get(at) || [] ) {
+            
+        }
+    }
 }
