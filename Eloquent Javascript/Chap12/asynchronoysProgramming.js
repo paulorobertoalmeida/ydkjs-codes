@@ -124,6 +124,10 @@ broadcastConnections(nest, name, source)
 
 function broadcastConnections(nest, exceptFor = null) {
     for (let neighbor of nest.neighbors) {
-        if
+        if (neighbor == exceptFor) continue;
+        request(nest, neighbor, "connections", {
+            name,
+            neighbors: nest.state.connections.get(name)
+        });
     }
 }
