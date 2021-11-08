@@ -116,4 +116,7 @@ function sendGossip(nest, message, excepFor = null) {
 
 requestType("connection", (nest, {name,neighbor}, source) => {
     let connection = nest.state.connections;
-if (JSON.stringify(connection.get(name)))})
+if (JSON.stringify(connection.get(name)) ===
+        JSON.stringify(neighbors)) return;
+    connections.set(name, neighbors);
+broadcastConnection(nest, name, source)})
