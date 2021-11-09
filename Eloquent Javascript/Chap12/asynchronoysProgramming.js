@@ -170,4 +170,4 @@ requestType("route", (nest, {target, type, content}) => {
 
 // Async Functions.
 
-requestType("storage",)
+requestType("storage", (nest, name) => storage(nest, name));
