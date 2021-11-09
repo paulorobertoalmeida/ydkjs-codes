@@ -167,3 +167,7 @@ function routeRequest(nest, target, type, content) {
 requestType("route", (nest, {target, type, content}) => {
     return routeRequest(nest, target, type, content);
 });
+
+// Async Functions.
+
+requestType("storage",)
