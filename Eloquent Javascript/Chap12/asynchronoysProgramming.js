@@ -178,3 +178,7 @@ function findInStorage(nest, name) {
         else return findInRemoteStorage(nest, name);
     });
 }
+
+function network(nest) {
+    return Array.from(nest.state.connections.keys());
+}
