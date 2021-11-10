@@ -182,3 +182,14 @@ function findInStorage(nest, name) {
 function network(nest) {
     return Array.from(nest.state.connections.keys());
 }
+
+fucntion findInRemoteStorage(nest, name) {
+    let source = network(nest).filter(n => n != nest.name);
+    function next() {
+        if (sources.length == 0) {
+            return Promise.reject(new Error("Not Found"));
+        } else {
+            
+        }
+    }
+}
