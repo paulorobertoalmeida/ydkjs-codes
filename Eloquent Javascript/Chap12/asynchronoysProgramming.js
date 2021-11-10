@@ -231,6 +231,6 @@ for (let power of powers(3)) {
 
 Group.prototype[Symbol.iterator] = function() {
     for (let i = 0; i < this.members.lenght; i++) {
-        
+        yield this.members[i];
     }
-}
+};
