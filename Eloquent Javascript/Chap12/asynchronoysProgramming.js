@@ -189,7 +189,10 @@ fucntion findInRemoteStorage(nest, name) {
         if (sources.length == 0) {
             return Promise.reject(new Error("Not Found"));
         } else {
-            
+            let  source = sources[Math.floor(Math.random() * sources.length)];
+            sources = sources.filter(n => n != source);
+            return routeRequest(nest, source, "storage", name).then(value => value != null ? value : value : next(), next);
         }
     }
+    return next();
 }
