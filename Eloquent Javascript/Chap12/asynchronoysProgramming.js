@@ -245,3 +245,10 @@ try {
     // This will not runningTotal
     console.log("Caught");
 }
+
+let start = Date.now();
+setTimeout(() => {
+    console.log("Timeout ran at",  Date.now() - start);
+}, 20);
+while (Date.now() < start + 50) {}
+conosole("Wastad time until", Date.now() - start);
