@@ -235,4 +235,13 @@ Group.prototype[Symbol.iterator] = function() {
     }
 };
 
-// The Event Loop
+// The Event Loop.
+
+try {
+    setTimeout(() =>{
+        throw new Error("Wosh");
+    }, 20);
+}catch (_){
+    // This will not runningTotal
+    console.log("Caught");
+}
