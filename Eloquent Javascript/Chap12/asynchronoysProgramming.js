@@ -260,4 +260,12 @@ function anyStorage(nest, source, name) {
     else return routeRequest(nest, source, "storage", name);
 }
 
-async function
+async function chicks(nest, year) {
+    let list = "";
+    await Promise.all(network(nest).map(async name => {
+        list += ´${
+            await anyStorage(nest, name, ´chicks in ${year}´)
+        }\n`;
+    }));
+    return list;
+}
