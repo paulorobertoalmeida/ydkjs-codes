@@ -183,7 +183,7 @@ function network(nest) {
     return Array.from(nest.state.connections.keys());
 }
 
-fucntion findInRemoteStorage(nest, name) {
+function findInRemoteStorage(nest, name) {
     let source = network(nest).filter(n => n != nest.name);
     function next() {
         if (sources.length == 0) {
@@ -241,7 +241,7 @@ try {
     setTimeout(() =>{
         throw new Error("Wosh");
     }, 20);
-}catch (_){
+} catch (_){
     // This will not runningTotal
     console.log("Caught");
 }
@@ -251,4 +251,13 @@ setTimeout(() => {
     console.log("Timeout ran at",  Date.now() - start);
 }, 20);
 while (Date.now() < start + 50) {}
-conosole("Wastad time until", Date.now() - start);
+console("Wastad time until", Date.now() - start);
+
+// Asynchronous Bugs.
+
+function anyStorage(nest, source, name) {
+    if (source == nest.name) return storage(nest, name);
+    else return routeRequest(nest, source, "storage", name);
+}
+
+async function
