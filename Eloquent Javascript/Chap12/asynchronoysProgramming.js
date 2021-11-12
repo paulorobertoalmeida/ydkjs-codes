@@ -274,4 +274,5 @@ async function chicks(nest, year){
     let lines = network(nest).map(async name => {
         return name + ": " + await anyStorage(nest, name, ´chicks in ${year}` );
     });
+    return (await Promise.all(lines)).join("\n");
 }
