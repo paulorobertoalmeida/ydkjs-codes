@@ -13,3 +13,9 @@ do(define(x, 10),
         {type: "word", value: 5}
     ]
 }
+
+//.
+
+function parseExpression(program){
+    
+}
