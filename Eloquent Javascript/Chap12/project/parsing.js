@@ -17,5 +17,7 @@ do(define(x, 10),
 //.
 
 function parseExpression(program){
-    
+    program = skipSpace(program);
+    let match, expression;
+    if(match = /^".exec())
 }
