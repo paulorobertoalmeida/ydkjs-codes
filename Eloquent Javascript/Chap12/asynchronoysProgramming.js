@@ -277,4 +277,6 @@ async function chicks(nest, year){
     return (await Promise.all(lines)).join("\n");
 }
 
-//
+/* main
+Here is where the code need to be
+*/
