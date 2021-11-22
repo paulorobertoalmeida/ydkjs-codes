@@ -286,3 +286,16 @@ do(define(x, 10),
     if(>(x, 5),
         print("large"), 
         print("small")))
+
+
+function parseExpression(program) {
+    program = skipSpace(program);
+    let match, expression;
+    if (match = /^"(([^"]*)"/.exec(program)) {
+        expr = {type: "value", value: match[1]};
+
+    }else if (match  = /^\d+\b/exec(program)){
+        expr = {type: "value", value: match[1]};
+    }
+    )
+}        
