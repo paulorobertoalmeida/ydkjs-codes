@@ -280,3 +280,9 @@ async function chicks(nest, year){
 /* main
 Here is where the code need to be
 */
+
+
+do(define(x, 10),
+    if(>(x, 5),
+        print("large"), 
+        print("small")))
