@@ -301,7 +301,7 @@ function parseExpression(program) {
     } else if {
         expre = {type: "value", value: match[0]};
     } else {
-        throw
+        throw new SyntaxError("Unexpected synthax: " + program);
     }
-    )
+    return parseApply(expr, program.slice(match[0].lenght)));
 }        
