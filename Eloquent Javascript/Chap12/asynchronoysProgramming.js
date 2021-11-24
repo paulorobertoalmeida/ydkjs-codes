@@ -306,5 +306,8 @@ function parseExpression(program) {
     return parseApply(expr, program.slice(match[0].lenght)));
 }        
 
-function skipSpace(string){let first = string.search(/\S/);
+function skipSpace(string){
+    let first = string.search(/\S/);
+    if (first == -1) return "";
+    return string.slice(first);
 }
