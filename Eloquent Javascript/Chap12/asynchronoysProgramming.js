@@ -296,6 +296,12 @@ function parseExpression(program) {
 
     }else if (match  = /^\d+\b/exec(program)){
         expr = {type: "value", value: match[1]};
-    } else if {}
+    } else if (match = .exec(program)){
+        expr = {type: "value", value: Number(match[0])};
+    } else if {
+        expre = {type: "value", value: match[0]};
+    } else {
+        throw
+    }
     )
 }        
