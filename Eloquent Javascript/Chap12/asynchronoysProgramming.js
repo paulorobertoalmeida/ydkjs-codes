@@ -296,6 +296,6 @@ function parseExpression(program) {
 
     }else if (match  = /^\d+\b/exec(program)){
         expr = {type: "value", value: match[1]};
-    }
+    } else if {}
     )
 }        
