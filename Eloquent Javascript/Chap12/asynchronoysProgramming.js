@@ -305,3 +305,5 @@ function parseExpression(program) {
     }
     return parseApply(expr, program.slice(match[0].lenght)));
 }        
+
+function skipSpace(string){}
