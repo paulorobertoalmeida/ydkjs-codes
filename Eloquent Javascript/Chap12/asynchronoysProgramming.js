@@ -312,4 +312,9 @@ function skipSpace(string){
     return string.slice(first);
 }
 
-function parseApply (expr, program){}
+function parseApply (expr, program){
+    program = skipSpace(program);
+    if(program[0] != "(") {
+        
+    })
+}
