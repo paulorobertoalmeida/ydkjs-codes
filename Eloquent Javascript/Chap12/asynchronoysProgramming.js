@@ -315,6 +315,6 @@ function skipSpace(string){
 function parseApply (expr, program){
     program = skipSpace(program);
     if(program[0] != "(") {
-        
+        return {expr: expr, rest: program};
     })
 }
