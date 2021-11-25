@@ -311,3 +311,5 @@ function skipSpace(string){
     if (first == -1) return "";
     return string.slice(first);
 }
+
+function parseApply (expr, program){}
