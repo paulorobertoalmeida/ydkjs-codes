@@ -318,3 +318,7 @@ function parseApply (expr, program){
         return {expr: expr, rest: program};
     })
 }
+
+
+programa = skipSpace(program.slice(1));
+expr = {type: }
