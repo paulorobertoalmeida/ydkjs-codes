@@ -323,5 +323,5 @@ function parseApply (expr, program){
 programa = skipSpace(program.slice(1));
 expr = {type: expr, rest: program};
 if(program[0] != ")"){
-    let arg = 
+    let arg = parseExpression(program);
 }
