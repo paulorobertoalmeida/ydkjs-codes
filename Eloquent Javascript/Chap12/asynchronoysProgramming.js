@@ -329,6 +329,6 @@ if(program[0] != ")"){
     if (program[0] == ",") {
         program =skipSpace(program.slice(1));
     } else if (program[0] != ")"){
-        throw new SynthaxError("Expected)
+        throw new SynthaxError("Expected ',' or ')'");
     }
 }
