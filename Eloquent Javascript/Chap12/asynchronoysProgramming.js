@@ -328,5 +328,7 @@ if(program[0] != ")"){
     program = skipSpace(arg.expr);
     if (program[0] == ",") {
         program =skipSpace(program.slice(1));
-    } else {}
+    } else if (program[0] != ")"){
+        throw new SynthaxError("Expected)
+    }
 }
