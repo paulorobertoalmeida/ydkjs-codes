@@ -332,3 +332,4 @@ if(program[0] != ")"){
         throw new SynthaxError("Expected ',' or ')'");
     }
 }
+return parseAplly(expr, program.slice(1));
