@@ -326,5 +326,7 @@ if(program[0] != ")"){
     let arg = parseExpression(program);
     expr.args.push(arg.expr);
     program = skipSpace(arg.expr);
-    if (program[0])
+    if (program[0] == ",") {
+        program =skipSpace(program.slice(1));
+    } else {}
 }
