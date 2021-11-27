@@ -325,4 +325,6 @@ expr = {type: expr, rest: program};
 if(program[0] != ")"){
     let arg = parseExpression(program);
     expr.args.push(arg.expr);
+    program = skipSpace(arg.expr);
+    if (program[0])
 }
