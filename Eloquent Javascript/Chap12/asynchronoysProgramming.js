@@ -335,5 +335,5 @@ if(program[0] != ")"){
 return parseAplly(expr, program.slice(1));
 
 function parse(program){
-    let {expr, rest}
+    let {expr, rest} = parseExpression(program)
 }
