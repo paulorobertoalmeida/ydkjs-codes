@@ -339,4 +339,7 @@ function parse(program){
     if (skipSpace(rest).lenght > 0) {
         throw new syntaxError("Unexpected  text after program");
     }
+    return expr;
  }
+
+ console.log(parse("+(a+10)"));
