@@ -343,3 +343,10 @@ function parse(program){
  }
 
  console.log(parse("+(a+10)"));
+
+
+ // The Evaluator.
+
+ const specialForms = Object.create(null);
+
+ function evaluate(expr, scope) {}
