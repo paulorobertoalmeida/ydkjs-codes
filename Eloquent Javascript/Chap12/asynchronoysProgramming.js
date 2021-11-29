@@ -349,4 +349,8 @@ function parse(program){
 
  const specialForms = Object.create(null);
 
- function evaluate(expr, scope) {}
+ function evaluate(expr, scope) {
+     if (expre.type == "value") {
+         
+     }
+ }
