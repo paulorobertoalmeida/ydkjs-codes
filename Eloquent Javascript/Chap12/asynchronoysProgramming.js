@@ -352,5 +352,7 @@ function parse(program){
  function evaluate(expr, scope) {
      if (expre.type == "value") {
          return expr.value;
-     } else if {}
+     } else if (expr.name in scope){
+         return scope[expr.name];
+     } else {}
  }
