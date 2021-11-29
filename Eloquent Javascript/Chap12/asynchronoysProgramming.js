@@ -354,5 +354,7 @@ function parse(program){
          return expr.value;
      } else if (expr.name in scope){
          return scope[expr.name];
-     } else {}
+     } else {
+         throw new ReferenceError()
+     }
  }
