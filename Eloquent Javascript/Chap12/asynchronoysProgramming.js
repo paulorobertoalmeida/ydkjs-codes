@@ -355,6 +355,7 @@ function parse(program){
      } else if (expr.name in scope){
          return scope[expr.name];
      } else {
-         throw new ReferenceError()
+         throw new ReferenceError(
+            `Undefined binding: ${expr.name}`);
      }
  }
