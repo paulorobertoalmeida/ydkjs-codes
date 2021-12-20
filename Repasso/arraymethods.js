@@ -63,10 +63,22 @@ const arr = [5,6,7,8,9];
   const arr = [1, 2, 3, 4, 5, 6];
   const alpha = ['e', 'a', 'c', 'u', 'y'];
 
-  // sort in descending order
-  descOrder = arr.sort((a, b) => a > b ? -1 : 1);
-  console.log(descOrder); // output: [6, 5, 4, 3, 2, 1]
+    // sort in descending order
+    descOrder = arr.sort((a, b) => a > b ? -1 : 1);
+    console.log(descOrder); // output: [6, 5, 4, 3, 2, 1]
 
-  // sort in ascending order
-  ascOrder = alpha.sort((a, b) => a > b ? 1 : -1);
-  console.log(ascOrder); // output: ['a', 'c', 'e', 'u', 'y']
+    // sort in ascending order
+    ascOrder = alpha.sort((a, b) => a > b ? 1 : -1);
+    console.log(ascOrder); // output: ['a', 'c', 'e', 'u', 'y']
+
+// from()
+  const name = 'frugence';
+  const nameArray = Array.from(name);
+
+  console.log(name); // output: frugence
+  console.log(nameArray); // output: ['f', 'r', 'u', 'g', 'e', 'n', 'c', 'e']
+
+// for()
+
+ const nums = Array.of(1, 2, 3, 4, 5, 6);
+  console.log(nums); // output: [1, 2, 3, 4, 5, 6]
