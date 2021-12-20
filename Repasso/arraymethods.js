@@ -46,3 +46,15 @@ const arr = [5,6,7,8,9];
   const smallNum = arr.some(num => num <= 0);
   console.log(smallNum); // output: false
   console.log(sum); // 21
+
+
+// every()
+  const arr = [1, 2, 3, 4, 5, 6];
+
+  // all elements are greater than 4
+  const greaterFour = arr.every(num => num > 4);
+  console.log(greaterFour); // output: false
+
+  // all elements are less than 10
+  const lessTen = arr.every(num => num < 10);
+  console.log(lessTen); // output: true
