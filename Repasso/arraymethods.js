@@ -58,3 +58,15 @@ const arr = [5,6,7,8,9];
   // all elements are less than 10
   const lessTen = arr.every(num => num < 10);
   console.log(lessTen); // output: true
+
+// sort()
+  const arr = [1, 2, 3, 4, 5, 6];
+  const alpha = ['e', 'a', 'c', 'u', 'y'];
+
+  // sort in descending order
+  descOrder = arr.sort((a, b) => a > b ? -1 : 1);
+  console.log(descOrder); // output: [6, 5, 4, 3, 2, 1]
+
+  // sort in ascending order
+  ascOrder = alpha.sort((a, b) => a > b ? 1 : -1);
+  console.log(ascOrder); // output: ['a', 'c', 'e', 'u', 'y']
