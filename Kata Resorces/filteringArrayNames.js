@@ -39,3 +39,13 @@ function fiveAndGreaterOnly(arr) {
 console.log(fiveAndGreaterOnly([3, 6, 8, 2])); /// [6, 8]
 
 
+// Given an array of numbers, return a new array that only includes the even numbers.
+
+function evensOnly(arr) {
+  const evenNumber = arr.filter((index) => index % 2 === 0)
+  return evenNumber
+}
+// test
+console.log(evensOnly([3, 6, 8, 2])); /// [6, 8, 2]
+
+
