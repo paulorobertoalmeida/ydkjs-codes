@@ -26,3 +26,14 @@ return shortToLong
 }
 
 console.log(lengthSort(["dog", "wolf", "by", "family", "eaten"])); // ["by", "dog", "wolf", "eaten", "family"] 
+
+// Sort an array alphabetically
+
+function alphabetical(arr) {
+  const alphabeticalOrder = arr.sort((a , b) => a.localeCompare(b));
+  return alphabeticalOrder
+}
+
+console.log(alphabetical(["dog", "wolf", "by", "family", "eaten"])); // ["by", "dog", "eaten", "family", "wolf"] 
+
+
