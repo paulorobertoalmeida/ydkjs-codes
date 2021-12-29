@@ -17,3 +17,12 @@ function greatestToLeast(arr) {
 console.log(greatestToLeast([1, 3, 5, 2, 90, 20])); // [90, 20, 5, 3, 2, 1] 
 
 
+// Sort an array from shortest string to longest
+
+function lengthSort(arr) {
+  const shortToLong = arr.sort((a, b) => a.localeCompare(b));
+
+return shortToLong
+}
+
+console.log(lengthSort(["dog", "wolf", "by", "family", "eaten"])); // ["by", "dog", "wolf", "eaten", "family"] 
