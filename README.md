@@ -7,4 +7,4 @@
 <br/>
 
 ### How can I use this Content
-*The better way to use it is opening you code editor or sandbox to see the outputs we have in each example.
+*The better way to use it is opening you code editor or sandbox to see the outputs we have in each example.*
